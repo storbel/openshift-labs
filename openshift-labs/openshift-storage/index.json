@@ -6,11 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Step 1 -  List Persistent volumes",
+        "text": "step1.md",
+        "code": "oc create -f volumes.json"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - List Persistent volume claims",
         "text": "step2.md"
       },
       {
@@ -26,6 +27,11 @@
         "text": "step5.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "volumes.json", "target": "/root", "chmod": "+x"}
+      ]
+  },
     "intro": {
       "text": "intro.md"
     },
