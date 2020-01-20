@@ -7,18 +7,12 @@ In this example, our base image is the Alpine version of Nginx. This provides th
 Task
 Create your Dockerfile for building your image by copying the contents below into the editor.
 
-Create a Dockerfile file
+Create a Dockerfile file if not already created
 
 `touch Dockerfile`{{execute}}
 
-Copy the content below to the Dockerfile
+Double-click the Dockerfile
 
-<pre class="file" data-target="clipboard">
-FROM nginx:alpine
-COPY ratp /usr/share/nginx/html
-</pre>
-
-edit file
 <pre class="file" data-filename="Dockerfile" data-target="replace">
 FROM nginx:alpine
 COPY ratp /usr/share/nginx/html

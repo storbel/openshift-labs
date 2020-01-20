@@ -13,3 +13,8 @@ After creating volume excute following command
 which will aloow container to connect to docker daemon and mange its on.
 
 `docker ps`{{execute}}
+
+
+Check the Portainer application :
+
+http://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com
