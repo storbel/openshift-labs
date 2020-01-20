@@ -19,13 +19,8 @@ COPY ratp /usr/share/nginx/html
 </pre>
 
 edit file
-<pre class="file" data-filename="app.js" data-target="replace">var http = require('http');
-var requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end('Hello, World!');
-}
-
-var server = http.createServer(requestListener);
-server.listen(3000, function() { console.log("Listening on port 3000")});
+<pre class="file" data-filename="Dockerfile" data-target="replace">
+FROM nginx:alpine
+COPY ratp /usr/share/nginx/html
 </pre>
 The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.
