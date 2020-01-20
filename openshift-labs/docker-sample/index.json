@@ -1,0 +1,42 @@
+{
+  "title": "Build docker image",
+  "description": "This lab help build a docker image from a git repository",
+  "difficulty": "Intermediate",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Download code from Git",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 -  Creare Dockerfile",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 -  Build Docker image",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideintro": true, "hidefinish": true,
+    "showvisualise": true,
+    "scope": "docker run --name=scope -d --net=host --pid=host --privileged -v /var/run/docker.sock:/var/run/docker.sock:rw weaveworks/scope:1.9.1 --probe.docker=true",
+    "scopePort": 4040,
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

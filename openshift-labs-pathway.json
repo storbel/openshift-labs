@@ -3,7 +3,11 @@
   "description": "Openshift Administration labs for the openshift training",
   "icon": "fa-openshift",
   "courses": [
-
+    {
+      "course_id": "docker-sample",
+      "title": "Docker Essentials before OpenShift",
+      "description": "Docker essentials for OpenShift understanding"
+    },
     {
       "course_id": "openshift-project",
       "title": "Project with OpenShift",
