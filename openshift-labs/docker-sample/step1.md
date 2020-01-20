@@ -69,3 +69,7 @@ then :
 
 `ifconfig`{{execute}}
 
+
+Exit the container bash
+
+`exit`{{execute}}

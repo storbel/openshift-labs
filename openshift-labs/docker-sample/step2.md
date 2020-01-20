@@ -14,17 +14,17 @@ List docker images :
 
 Change the container name **rename**
 
-`docker rename ratp  myratp`{{execute}}
+`docker rename hello-world  myhelloworld`{{execute}}
 
 
 
 Execute a command inline on a docker container **exec**:
 
-`docker exec myratp ps aux`{{execute}}
+`docker exec myhelloworld ps aux`{{execute}}
 
 Inspect a docker image **inspect** :
 
-`docker inspect ratp`{{execute}}
+`docker inspect hello-world`{{execute}}
 
 
 Copy a file into container **copy**:
@@ -32,17 +32,17 @@ Copy a file into container **copy**:
 `echo "new file"> testfile`{{execute}}
 
 
-`docker cp testfile myratp:/opt`{{execute}}
+`docker cp testfile myhelloworld:/opt`{{execute}}
 
 Check updated filesystem **diff** :
 
 
-`docker diff myratp`{{execute}}
+`docker diff myhelloworld`{{execute}}
 
 
 Stop a container **stop**:
 
-`docker stop myratp`{{execute}}
+`docker stop myhelloworld`{{execute}}
 
 
 
