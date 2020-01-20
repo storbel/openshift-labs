@@ -22,6 +22,10 @@
     }
   },
   "environment": {
+    "showdashboard": true,
+    "dashboards": [
+        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"},
+        {"name": "ratp", "href": "https://ratp-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
     "uilayout": "terminal-iframe"
   },
   "backend": {
