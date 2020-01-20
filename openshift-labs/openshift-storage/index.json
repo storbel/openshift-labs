@@ -27,11 +27,7 @@
         "text": "step5.md"
       }
     ],
-    "assets": {
-      "host01": [
-          {"file": "volumes.json", "target": "/root", "chmod": "+x"}
-      ]
-  },
+
     "intro": {
       "text": "intro.md"
     },
