@@ -1,0 +1,34 @@
+{
+  "title": "OpenShift project Lab",
+  "description": "This lab aim to ensure project understanding",
+  "difficulty": "Beginner",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "openshift-middleware-3-7"
+  }
+}

@@ -2,15 +2,71 @@
   "title": "Openshift Administration labs",
   "description": "Openshift Administration labs for the openshift training",
   "courses": [
+
     {
-      "course_id": "projects-quiz",
-      "title": "Interactive Quiz about Openshift projects",
-      "description": "Verify understand and key points by using an interactive quiz"
+      "course_id": "openshift-project",
+      "title": "Project with OpenShift",
+      "description": "Verify understand of Project"
     },
     {
-      "course_id": "replicaset",
-      "title": "ReplicaSet with OpenShift",
-      "description": "Verify understand of ReplicaSet"
+      "course_id": "openshift-pod",
+      "title": "Pod with OpenShift",
+      "description": "Verify understand of Pod"
+    },
+    {
+      "course_id": "openshift-daemonset",
+      "title": "Daemonset with OpenShift",
+      "description": "Verify understand of daemonset"
+    },
+    {
+      "course_id": "openshift-service",
+      "title": "Service with OpenShift",
+      "description": "Verify understand of Service"
+    },
+    {
+      "course_id": "openshift-route",
+      "title": "Route with OpenShift",
+      "description": "Verify understand of Route"
+    },
+    {
+      "course_id": "openshift-configmap",
+      "title": "Configmap with OpenShift",
+      "description": "Verify understand of configmap"
+    },
+    {
+      "course_id": "openshift-deploymentConfig",
+      "title": "DeploymentConfig with OpenShift",
+      "description": "Verify understand of DeploymentConfig"
+    },
+    {
+      "course_id": "openshift-replicationController",
+      "title": "ReplicationController with OpenShift",
+      "description": "Verify understand of ReplicationController"
+    },
+    {
+      "course_id": "openshift-cli",
+      "title": "CLI with OpenShift",
+      "description": "Verify understand of CLI"
+    },
+    {
+      "course_id": "openshift-quota",
+      "title": "Quota with OpenShift",
+      "description": "Verify understand of Quota concepts"
+    },
+    {
+      "course_id": "openshift-storage",
+      "title": "Storage with OpenShift",
+      "description": "Verify understand of Storage concepts"
+    },
+    {
+      "course_id": "openshift-authentication-authorization",
+      "title": "Authentication and Authorization with OpenShift",
+      "description": "Verify understand of Authentication and Authorization concepts"
+    },
+    {
+      "course_id": "openshift-monitoring",
+      "title": "Storage with OpenShift",
+      "description": "Verify understand of Monitoring concepts"
     }
   ]
 }
