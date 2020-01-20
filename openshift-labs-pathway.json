@@ -1,6 +1,7 @@
 {
   "title": "Openshift Administration labs",
   "description": "Openshift Administration labs for the openshift training",
+  "icon": "fa-openshift",
   "courses": [
 
     {
