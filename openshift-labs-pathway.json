@@ -67,6 +67,11 @@
       "course_id": "openshift-monitoring",
       "title": "Storage with OpenShift",
       "description": "Verify understand of Monitoring concepts"
+    },
+    {
+      "course_id": "openshift-complete-example",
+      "title": "Complete application deployment with OpenShift",
+      "description": "Verify understand of Openshift concepts"
     }
   ]
 }
