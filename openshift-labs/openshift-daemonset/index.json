@@ -29,6 +29,10 @@
     "uilayout": "terminal"
   },
   "backend": {
+    "showdashboard": true,
+    "dashboards": [
+        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
+
     "imageid": "openshift-middleware-3-7"
   }
 }
