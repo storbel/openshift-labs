@@ -1,5 +1,11 @@
 {
   "title": "Openshift Administration labs",
   "description": "Openshift Administration labs for the openshift training",
-  "courses": []
+  "courses": [
+    {
+      "course_id": "quiz",
+      "title": "Interactive Quiz",
+      "description": "Verify understand and key points by using an interactive quiz"
+    }
+  ]
 }
