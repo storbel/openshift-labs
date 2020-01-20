@@ -12,6 +12,12 @@ List docker images :
 
 `docker images`{{execute}}
 
+Run a docker container :
+
+
+
+`docker container run -idt  hello-world`{{execute}}
+
 Change the container name **rename**
 
 `docker rename hello-world  myhelloworld`{{execute}}
