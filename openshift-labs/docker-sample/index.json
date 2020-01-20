@@ -6,20 +6,32 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Download code from Git",
+        "title": "Step 1 - Check Docker environment",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 -  Creare Dockerfile",
+        "title": "Step 2 - Play with Docker ",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 -  Build Docker image",
+        "title": "Step 3 - Download code from Git",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 4 -  Create Dockerfile",
         "text": "step4.md"
+      },
+      {
+        "title": "Step 5 -  Build and Run Docker image",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 -  Persistent volume",
+        "text": "step6.md"
+      },
+      {
+        "title": "Step 6 -  Push image to DockerHub",
+        "text": "step7.md"
       }
     ],
     "intro": {

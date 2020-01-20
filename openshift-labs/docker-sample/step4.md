@@ -1,16 +1,21 @@
-The built Image can be launched in a consistent way to other Docker Images. When a container launches, it's sandboxed from other processes and networks on the host. When starting a container you need to give it permission and access to what it requires.
+Docker Images start from a base image. The base image should include the platform dependencies required by your application, for example, having the JVM or CLR installed.
 
-For example, to open and bind to a network port on the host you need to provide the parameter -p <host-port>:<container-port>.
+This base image is defined as an instruction in the Dockerfile. Docker Images are built based on the contents of a Dockerfile. The Dockerfile is a list of instructions describing how to deploy your application.
+
+In this example, our base image is the Alpine version of Nginx. This provides the configured web server on the Linux Alpine distribution.
 
 Task
-Launch our newly built image providing the friendly name and tag. As it's a web server, bind port 80 to our host using the -p parameter.
+Create your Dockerfile for building your image by copying the contents below into the editor.
 
-`docker run -d -p 80:80 webserver-image:v1`{{execute}}
+Create a Dockerfile file
 
-Once started, you'll be able to access the results of port 80 via curl docker
+`touch Dockerfile`{{execute}}
 
-To render the requests in the browser use the following links
+Copy the content below to the Dockerfile
 
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+<pre class="file" data-target="clipboard">
+FROM nginx:alpine
+COPY ratp /usr/share/nginx/html
+</pre>
 
-You now have a static HTML website being served by Nginx.
+The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.

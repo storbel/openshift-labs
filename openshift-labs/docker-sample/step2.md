@@ -1,21 +1,79 @@
-Docker Images start from a base image. The base image should include the platform dependencies required by your application, for example, having the JVM or CLR installed.
+In this step, we will have an overview of the Docker essantial cli commands
 
-This base image is defined as an instruction in the Dockerfile. Docker Images are built based on the contents of a Dockerfile. The Dockerfile is a list of instructions describing how to deploy your application.
+Essential Container Operations - list, logs, exec, cp, inspect, stop, rm
+In this section we are looking for some of the essential container operations like list,logs, exec etc.
 
-In this example, our base image is the Alpine version of Nginx. This provides the configured web server on the Linux Alpine distribution.
+First we do list the containers **ps**
 
-Task
-Create your Dockerfile for building your image by copying the contents below into the editor.
 
-Create a Dockerfile file
+`docker ps -a`{{execute}}
 
-`touch Dockerfile`{{execute}}
+List docker images :
 
-Copy the content below to the Dockerfile
+`docker images`{{execute}}
 
-<pre class="file" data-target="clipboard">
-FROM nginx:alpine
-COPY ratp /usr/share/nginx/html
-</pre>
+Change the container name **rename**
 
-The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.
+`docker rename ratp  myratp`{{execute}}
+
+
+
+Execute a command inline on a docker container **exec**:
+
+`docker exec myratp ps aux`{{execute}}
+
+Inspect a docker image **inspect** :
+
+`docker inspect ratp`{{execute}}
+
+
+Copy a file into container **copy**:
+
+`echo "new file"> testfile`{{execute}}
+
+
+`docker cp testfile myratp:/opt`{{execute}}
+
+Check updated filesystem **diff** :
+
+
+`docker diff myratp`{{execute}}
+
+
+Stop a container **stop**:
+
+`docker stop myratp`{{execute}}
+
+
+
+Publishing containers using port mapping :
+
+`docker container run -idt -p 8888:80 nginx`{{execute}}
+
+https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com
+
+`docker ps`{{execute}}
+
+see all the layers of docker image **history**:
+
+`docker image history nginx`{{execute}}
+
+Grab a docker image locally **pull**:
+
+`docker pull ubuntu`{{execute}}
+
+
+Check image volatile data :
+
+`docker container run -idt --name dev --net host ubuntu bash`{{execute}}
+
+
+`docker ps `{{execute}}
+`docker exec -it dev bash`{{execute}}
+`apt-get update
+apt-get install vim
+touch /opt/testfile`{{execute}}
+
+`docker stop dev`{{execute}}
+
+`docker stop dev`{{execute}}
