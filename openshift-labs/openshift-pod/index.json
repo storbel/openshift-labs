@@ -29,12 +29,12 @@
     "hideintro": true,
     "showdashboard": true,
     "dashboards": [
-        {"name": "URL", "href": "https://www.google.co.uk"},
-        {"name": "Port 80", "port": 80},
-        {"name": "Placeholder", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
+
+        {"name": "Port 8080", "port": 80},
+        {"name": "port 80", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "openshift-middleware-3-7"
+    "imageid": "openshift-3-11"
   }
 }
