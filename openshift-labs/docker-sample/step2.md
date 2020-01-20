@@ -8,12 +8,14 @@ Task
 Create your Dockerfile for building your image by copying the contents below into the editor.
 
 Create a Dockerfile file
+
 `touch Dockerfile`{{execute}}
 
 Copy the content below to the Dockerfile
+
 <pre class="file" data-target="clipboard">
 FROM nginx:alpine
-COPY demoapp/ /usr/share/nginx/html
+COPY ratp /usr/share/nginx/html
 </pre>
 
 The first line defines our base image. The second line copies the content of the current directory into a particular location inside the container.
