@@ -5,82 +5,83 @@
   "courses": [
     {
       "course_id": "docker-sample",
-      "title": "Docker Essentials before OpenShift",
+      "title": "Lab 01 - Docker Essentials before OpenShift",
       "description": "Docker essentials for OpenShift understanding"
     },
     {
       "course_id": "openshift-project",
-      "title": "Project with OpenShift",
+      "title": "Lab 02 - Project with OpenShift",
       "description": "Verify understand of Project"
     },
     {
       "course_id": "openshift-pod",
-      "title": "Pod with OpenShift",
+      "title": "Lab 03 - Pod with OpenShift",
       "description": "Verify understand of Pod"
     },
     {
       "course_id": "openshift-daemonset",
-      "title": "Daemonset with OpenShift",
+      "title": "Lab 04 - Daemonset with OpenShift",
       "description": "Verify understand of daemonset"
     },
     {
       "course_id": "openshift-service",
-      "title": "Service with OpenShift",
+      "title": "Lab 05 - Service with OpenShift",
       "description": "Verify understand of Service"
     },
     {
       "course_id": "openshift-route",
-      "title": "Route with OpenShift",
+      "title": "Lab 06 - Route with OpenShift",
       "description": "Verify understand of Route"
     },
     {
       "course_id": "openshift-secret",
-      "title": "Secret with OpenShift",
+      "title": "Lab 07 - Secret with OpenShift",
       "description": "Verify understand of Secret"
     },
     {
       "course_id": "openshift-configmap",
-      "title": "Configmap with OpenShift",
+      "title": "Lab 08 - Configmap with OpenShift",
       "description": "Verify understand of configmap"
     },
     {
       "course_id": "openshift-deploymentConfig",
-      "title": "DeploymentConfig with OpenShift",
+      "title": "Lab 09 - DeploymentConfig with OpenShift",
       "description": "Verify understand of DeploymentConfig"
     },
     {
       "course_id": "openshift-replicationController",
-      "title": "ReplicationController with OpenShift",
+      "title": "Lab 10 - ReplicationController with OpenShift",
       "description": "Verify understand of ReplicationController"
     },
     {
       "course_id": "openshift-cli",
-      "title": "CLI with OpenShift",
+      "title": "Lab 11 - CLI with OpenShift",
       "description": "Verify understand of CLI"
     },
-    {
-      "course_id": "openshift-quota",
-      "title": "Quota with OpenShift",
-      "description": "Verify understand of Quota concepts"
-    },
+
     {
       "course_id": "openshift-storage",
-      "title": "Storage with OpenShift",
+      "title": "Lab 12 - Storage with OpenShift",
       "description": "Verify understand of Storage concepts"
     },
     {
       "course_id": "openshift-authentication-authorization",
-      "title": "Authentication and Authorization with OpenShift",
+      "title": "Lab 13 - Authentication and Authorization with OpenShift",
       "description": "Verify understand of Authentication and Authorization concepts"
     },
     {
+      "course_id": "openshift-quota",
+      "title": "Lab 14 - Quota with OpenShift",
+      "description": "Verify understand of Quota concepts"
+    },
+    {
       "course_id": "openshift-monitoring",
-      "title": "Storage with OpenShift",
+      "title": "Lab 15 - Monitoring with OpenShift",
       "description": "Verify understand of Monitoring concepts"
     },
     {
       "course_id": "openshift-complete-example",
-      "title": "Complete application deployment with OpenShift",
+      "title": "Lab 16 - Complete application deployment with OpenShift",
       "description": "Verify understand of Openshift concepts"
     }
   ]
