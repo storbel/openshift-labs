@@ -29,9 +29,7 @@
     "hideintro": true,
     "showdashboard": true,
     "dashboards": [
-
-        {"name": "Port 8080", "port": 80},
-        {"name": "port 80", "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"}],
+        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
     "uilayout": "terminal-iframe"
   },
   "backend": {

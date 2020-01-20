@@ -7,8 +7,7 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md",
-        "code": "oc create -f volumes.json"
+        "text": "step1.md"
       },
       {
         "title": "Step 2",
@@ -40,7 +39,10 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "showdashboard": true,
+    "dashboards": [
+        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
+   "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "openshift-middleware-3-7"

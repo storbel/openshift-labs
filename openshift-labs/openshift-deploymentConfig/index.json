@@ -18,6 +18,11 @@
         "text": "step3.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "helloworld.yaml", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
