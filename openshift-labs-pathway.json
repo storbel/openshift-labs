@@ -3,8 +3,8 @@
   "description": "Openshift Administration labs for the openshift training",
   "courses": [
     {
-      "course_id": "quiz",
-      "title": "Interactive Quiz",
+      "course_id": "projects-quiz",
+      "title": "Interactive Quiz about Openshift projects",
       "description": "Verify understand and key points by using an interactive quiz"
     }
   ]
