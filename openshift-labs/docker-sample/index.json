@@ -34,9 +34,11 @@
         "text": "step7.md"
       }
     ],
-    "host01": [
-      {"file": "Dockerfile", "target": "/root"}
-  ]
+    "assets": {
+      "host01": [
+          {"file": "Dockerfile", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
