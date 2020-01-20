@@ -20,13 +20,13 @@ In order that you can still run commands from the command line as a cluster admi
 `oc get projects --as system:admin`{{execute}}
 
 Creating your own Project
-To create a new project called myproject run the command:
+To create a new project called acs run the command:
 
-`oc new-project myproject`{{execute}}
+`oc new-project acs`{{execute}}
 
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 
-`oc project myproject`{{execute}}
+`oc project acs`{{execute}}
 
 Persistent Volume Claims
 Persistent volumes have been pre-created in the playground environment. These will be used if you make persistent volume claims for an application. The volume sizes are defined as 100Gi each, however you are limited by how much disk space the host running the OpenShift environment has, which is much less.
@@ -43,5 +43,5 @@ If you attempt to run an arbitrary image from an external image registry such a 
 
 In order to run such an image, you will need to grant additional privileges to the project you create to allow it to run an application image as any user ID. This can be done by running the command:
 
-`oc adm policy add-scc-to-user anyuid -z default -n myproject --as system:admin`{{execute}}
+`oc adm policy add-scc-to-user anyuid -z default -n acs --as system:admin`{{execute}}
 

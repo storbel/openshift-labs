@@ -29,6 +29,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "openshift-middleware-3-7"
+    "imageid": "openshift-3-11"
   }
 }
