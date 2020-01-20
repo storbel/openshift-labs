@@ -29,6 +29,11 @@
       "description": "Verify understand of Route"
     },
     {
+      "course_id": "openshift-secret",
+      "title": "Secret with OpenShift",
+      "description": "Verify understand of Secret"
+    },
+    {
       "course_id": "openshift-configmap",
       "title": "Configmap with OpenShift",
       "description": "Verify understand of configmap"
