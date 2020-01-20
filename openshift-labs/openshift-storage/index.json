@@ -6,12 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 -  List Persistent volumes",
-        "text": "step1.md",
-        "code": "oc create -f volumes.json"
+        "title": "Step 1",
+        "text": "step1.md"
       },
       {
-        "title": "Step 2 - List Persistent volume claims",
+        "title": "Step 2",
         "text": "step2.md"
       },
       {
@@ -27,7 +26,6 @@
         "text": "step5.md"
       }
     ],
-
     "intro": {
       "text": "intro.md"
     },
@@ -39,6 +37,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "openshift-3-11"
+    "imageid": "openshift-middleware-3-7"
   }
 }
