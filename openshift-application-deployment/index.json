@@ -1,25 +1,29 @@
 {
-  "title": "Dedicated lab for Openshift Authorization and Authenticationb",
-  "description": "Dedicated lab for Openshift Authorization and Authentication",
-  "difficulty": "Advanced",
+  "title": "Openshift application deployment",
+  "description": "This Lab help understand the different ways of deploying application to Openshift",
+  "difficulty": "Intermediate",
   "time": "30",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Manipulate users",
+        "title": "Step 1 -  Create Project",
         "text": "step1.md"
       },
       {
-        "title": "Step 2 -  Login with token & API",
+        "title": "Step 2 -  Deploy application from Source git",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Console login",
+        "title": "Step 3",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - ServiceAccount",
+        "title": "Step 4",
         "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
       }
     ],
     "intro": {
@@ -33,8 +37,7 @@
     "showdashboard": true,
     "dashboards": [
         {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
-
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal-split"
   },
   "backend": {
     "imageid": "openshift-3-11"
