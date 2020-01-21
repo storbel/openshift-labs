@@ -119,10 +119,3 @@ Access to the application via the link belwo :
 
 http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-
-Delete previously created applications :
-
-`oc  delete all -l app=advanced-app `{{execute}}
-
-`oc  delete all -l app=basic-app `{{execute}}
-
