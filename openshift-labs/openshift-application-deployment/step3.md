@@ -6,6 +6,11 @@
     -e MYSQL_PASSWORD=acs2020 \
     -e MYSQL_DATABASE=ocpdemo`{{execute}}
 
+`oc new-app openshift/postgresql-92-centos7 --name database \
+    -e POSTGRESQL_USER=acs_user \
+    -e POSTGRESQL_DATABASE=ocpdemo \
+    -e POSTGRESQL_PASSWORD=acs2020`{{execute}}
+
 
 Get the pod name for  **basic-app**:
 
@@ -15,6 +20,19 @@ Display the Pod name :
 
 ` echo $POD`{{execute}}
 
+
+
+`oc rsh $POD`{{execute}}
+
+Connect to Database :
+
+`psql -h localhost -p 5432 -U acs_user ocpdemo`{{execute}}
+
+`CREATE TABLE dbversion (id SERIAL PRIMARY KEY,version VARCHAR(30) NOT NULL);
+INSERT INTO dbversion (version) VALUES ('1.0');
+`{{execute}}
+
+`\d`{{execute}}
 
 
 Copy the SQL file to the POD:
