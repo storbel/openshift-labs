@@ -6,15 +6,15 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Prepare environement",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Liveness and Readiness",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - Openshift monitoring stack",
         "text": "step3.md"
       }
     ],
