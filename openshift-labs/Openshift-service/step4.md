@@ -3,15 +3,8 @@
 
 get the service ip :
 
-
-oc get svc -i wide
-
-
-Suppose that we want to modify
+`oc get svc -i wide`{{execute}}
 
 Check the cluster service CIDR configuration :
 
-
-/etc/origin/master/master-config.yaml
-
-
+`cat /etc/origin/master/master-config.yaml`{{execute}}
