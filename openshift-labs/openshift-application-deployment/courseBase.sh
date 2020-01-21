@@ -6,3 +6,9 @@ oc new-project acs
 
 oc policy add-role-to-user admin developer -n acs
 
+mkdir myapp
+echo "<html><body><p>Hello from nginx based application</p></body></html>" > myapp/index.html
+echo "FROM nginx:alpine
+COPY index.html /usr/share/nginx/html
+" > myapp/Dockerfile
+

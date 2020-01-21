@@ -6,7 +6,7 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 -  Create Project",
+        "title": "Step 1 -  Connect to cluster",
         "text": "step1.md"
       },
       {
@@ -14,15 +14,15 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - Creating an Application From an Image",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 4 - Creating an Application From a Template",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Step 5 - Creating an Application Using the Web Console",
         "text": "step5.md"
       }
     ],

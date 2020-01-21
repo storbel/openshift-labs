@@ -1,6 +1,4 @@
-### Creating an Application Using the CLI
-
-Creating an Application From Source Code
+### Creating an Application From Source Code
 
 `oc new-app https://github.com/storbel/basic-app.git`{{execute}}
 
@@ -59,6 +57,13 @@ Access to the application via the link belwo :
 
 
 http://basic-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+
+You can override the build strategy by setting the --strategy flag to either docker, pipeline or source.
+Create an application with Docker strategy :
+
+`oc new-app myapp --strategy=docker`{{execute}}
+
 
 Create an application from a specific branch :
 
