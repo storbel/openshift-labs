@@ -1,5 +1,5 @@
 ### Creating an Application From a Template
-
+A template describes a set of objects that can be parameterized and processed to produce a list of objects for creation by OpenShift Container Platform. A template can be processed to create anything you have permission to create within a project
 
 List all the Templates available :
 
