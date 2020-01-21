@@ -1,22 +1,34 @@
 ### Creating an Application Using the CLI
 
-#### Creating an Application From Source Code
+Creating an Application From Source Code
 
 `oc new-app https://github.com/storbel/basic-app.git`{{execute}}
 
 `oc status `{{execute}}
 
+wait 2 seconds
+
 `oc get pod  `{{execute}}
+
+wait 2 seconds
+
+`oc logs  basic-app-1-build`{{execute}}
+
+Follow in real-time the image build process by following the build pod logs :
 
 
 `oc logs -f basic-app-1-build`{{execute}}
 
 Follow the logs until getting **Push successful**
 
+
+Get the pod name :
+
 ` POD=$(oc get pod|grep basic-app | grep Running | awk '{print $1}')`{{execute}}
 
-` echo $POD`{{execute}}
+Display the Pod name :
 
+` echo $POD`{{execute}}
 
 `oc get pod $POD -o yaml `{{execute}}
 
@@ -36,4 +48,39 @@ Follow the logs until getting **Push successful**
 
 `oc  get route `{{execute}}
 
+`oc  expose svc/basic-app `{{execute}}
+
+
+`oc  get  svc basic-app -o yaml  `{{execute}}
+
 `oc  get route `{{execute}}
+
+Access to the application via the link belwo :
+
+
+http://basic-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+Create an application from a specific branch :
+
+oc new-app https://github.com/storbel/basic-app.git#advanced --name advanced-app`{{execute}}
+
+`oc status `{{execute}}
+
+wait 2 seconds
+
+`oc get pod  `{{execute}}
+
+wait 2 seconds
+
+`oc logs  advanced-app-1-build`{{execute}}
+
+Follow in real-time the image build process by following the build pod logs :
+
+
+`oc logs -f advanced-app-1-build`{{execute}}
+
+Follow the logs until getting **Push successful**
+
+
+
+
