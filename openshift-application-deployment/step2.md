@@ -6,10 +6,11 @@
 
 `oc status `{{execute}}
 
-
 `oc get pod  `{{execute}}
 
 ` POD=$(oc get pod|grep basic-app | grep Running | awk '{print $1}')`{{execute}}
+
+
 ` echo $POD`{{execute}}
 
 
@@ -24,9 +25,6 @@
 `oc  get is`{{execute}}
 
 `oc  get is basic-app -o json | jq '.' `{{execute}}
-
-
-
 
 
 
