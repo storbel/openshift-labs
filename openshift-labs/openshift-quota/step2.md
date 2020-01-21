@@ -1,27 +1,37 @@
 
 
-oc get quota -n acs
+List the actual quotas on the project **acs**
+`oc get quota -n acs`{{execute}}
 
-apply quota on project acs
+apply some quota on project **acs**
 
-oc create -f add-quota-acs.yml
+`oc create -f add-quota-acs.yml`{{execute}}
+
+Describe the created quotas :
+
+`oc describe quota project-acs-limit -n acs`{{execute}}
+
+Use export to check the quotas values set :
+
+`oc export quota project-acs-limit -n acs`{{execute}}
+
+Now, create quota related to User **developer** :
+
+`oc create -f add-quota-developer.yml`{{execute}}
+
+Check the new list of quotas :
+
+`oc get quota -n acs`{{execute}}
 
 
-oc describe quota project-acs-limit -n acs
+Describe the created quotas :
+
+`oc describe quota user-developer-limit -n acs`{{execute}}
+
+Use export to check the quotas values set :
 
 
-oc export quota project-acs-limit -n acs
+`oc export quota user-developer-limit -n acs`{{execute}}
 
 
 
-oc get quota -n acs
-
-
-oc create -f add-quota-developer.yml
-
-oc describe quota user-developer-limit -n acs
-
-oc export quota user-developer-limit -n acs
-
-
-oc get quota -n acs
