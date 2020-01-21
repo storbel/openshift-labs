@@ -32,3 +32,11 @@ Creat a bigger one :
 take a look to the error message and try to fix the issue, then try again.
 
 
+**Solution**
+
+
+Hints:
+
+`oc edit quota project-acs-limit --as system:admin`{{execute}}
+
+Edit any other quota that need to be updated to fix the issue

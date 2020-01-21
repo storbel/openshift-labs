@@ -5,7 +5,7 @@ List the actual quotas on the project **acs**
 
 apply some quota on project **acs**
 
-`oc create -f add-quota-acs.yml`{{execute}}
+`oc create -f add-quota-acs.yml --as system:admin`{{execute}}
 
 Describe the created quotas :
 
@@ -17,7 +17,7 @@ Use export to check the quotas values set :
 
 Now, create quota related to User **developer** :
 
-`oc create -f add-quota-developer.yml`{{execute}}
+`oc create -f add-quota-developer.yml --as system:admin`{{execute}}
 
 Check the new list of quotas :
 
