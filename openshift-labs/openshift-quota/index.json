@@ -18,6 +18,14 @@
         "text": "step3.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "add-quota-acs.yml", "target": "/root"},
+          {"file": "add-quota-developer.yml", "target": "/root"},
+          {"file": "smallpod.yml", "target": "/root"},
+          {"file": "bigpod.yml", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
