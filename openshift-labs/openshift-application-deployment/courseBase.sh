@@ -1,5 +1,9 @@
 
+# Create Project acs
 
-echo "yohoo"> new_file
+oc create -f init.yaml
 
-cat new_file
+# Add developer as an administrator for this project
+
+oc policy add-role-to-user admin developer -n acs
+
