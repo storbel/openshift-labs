@@ -12,3 +12,32 @@ echo "FROM nginx:alpine
 ADD . /usr/share/nginx/html
 " > myapp/Dockerfile
 
+
+
+echo '{
+    "apiVersion": "v1",
+    "kind": "List",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "PersistentVolume",
+            "metadata": {
+                "name": "pv-10"
+            },
+            "spec": {
+                "accessModes": [
+                    "ReadWriteMany"
+                ],
+                "capacity": {
+                    "storage": "10Gi"
+                },
+                "hostPath": {
+                    "path": "/data/pv-10"
+                },
+                "persistentVolumeReclaimPolicy": "Recycle"
+            }
+        }
+    ]
+}' > pv.yml
+
+oc create -f pv.yml

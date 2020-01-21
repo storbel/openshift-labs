@@ -62,6 +62,14 @@ http://basic-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.kataco
 You can override the build strategy by setting the --strategy flag to either docker, pipeline or source.
 Create an application with Docker strategy :
 
+
+a folder containing a Dockerfile has been created for you.
+
+List the folder files :
+`ls myapp`{{execute}}
+
+Build a new application based on the Dockerfile image definintion on myapp/Dockerfile
+
 `oc new-app myapp --strategy=docker`{{execute}}
 
 
@@ -90,7 +98,12 @@ Follow the logs until getting **Push successful**
 
 Access to the application via the link belwo :
 
-
 http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
+
+Delete previously created applications :
+
+`oc  delete all -l app=advanced-app `{{execute}}
+
+`oc  delete all -l app=basic-app `{{execute}}
 
