@@ -12,6 +12,7 @@ echo "FROM nginx:alpine
 ADD . /usr/share/nginx/html
 " > myapp/Dockerfile
 
+for pv_dir in /data/pv-frontend /data/pv-database; do mkdir -p $pv_dir; chmod a+rwx $pv_dir; done
 
 echo '{
     "apiVersion": "v1",
@@ -21,7 +22,7 @@ echo '{
             "apiVersion": "v1",
             "kind": "PersistentVolume",
             "metadata": {
-                "name": "pv-10"
+                "name": "pv-frontend"
             },
             "spec": {
                 "accessModes": [
@@ -31,7 +32,28 @@ echo '{
                     "storage": "10Gi"
                 },
                 "hostPath": {
-                    "path": "/data/pv-10"
+                    "path": "/data/pv-frontend"
+                },
+                "persistentVolumeReclaimPolicy": "Recycle"
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "PersistentVolume",
+            "metadata": {
+                "name": "pv-database"
+            },
+            "spec": {
+                "accessModes": [
+                    "ReadWriteOnce",
+                    "ReadWriteMany",
+                    "ReadOnlyMany"
+                ],
+                "capacity": {
+                    "storage": "1Gi"
+                },
+                "hostPath": {
+                    "path": "/data/pv-database"
                 },
                 "persistentVolumeReclaimPolicy": "Recycle"
             }

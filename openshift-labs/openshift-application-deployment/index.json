@@ -2,7 +2,7 @@
   "title": "Openshift application deployment",
   "description": "This Lab help understand the different ways of deploying application to Openshift",
   "difficulty": "Intermediate",
-  "time": "30",
+  "time": "60",
   "details": {
     "steps": [
       {

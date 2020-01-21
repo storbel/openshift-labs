@@ -67,6 +67,10 @@ Enter the container shell :
 
 `oc rsh $POD`{{execute}}
 
+in case of error, try to access directly the pod terminal via the link blow :
+
+https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console/project/acs/browse/pods/secret-vol-pod?tab=terminal
+
 List the secrets :
 
 `ls /etc/secret-volume/`{{execute}}
