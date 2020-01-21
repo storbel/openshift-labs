@@ -13,7 +13,6 @@ ADD . /usr/share/nginx/html
 " > myapp/Dockerfile
 
 
-
 echo '{
     "apiVersion": "v1",
     "kind": "List",

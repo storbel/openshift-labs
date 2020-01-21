@@ -20,7 +20,7 @@ Follow in real-time the image build process by following the build pod logs :
 Follow the logs until getting **Push successful**
 
 
-Get the pod name :
+Get the pod name for  **basic-app**:
 
 ` POD=$(oc get pod|grep basic-app | grep Running | awk '{print $1}')`{{execute}}
 
@@ -28,28 +28,47 @@ Display the Pod name :
 
 ` echo $POD`{{execute}}
 
+Display Pod **basic-app** details :
+
 `oc get pod $POD -o yaml `{{execute}}
 
+Display containers configuration :
+
 `oc get pod $POD -o json | jq '.spec.containers'`{{execute}}
+
+List **building configs** :
 
 `oc get bc `{{execute}}
 
 `oc get bc -o yaml `{{execute}}
 
+List **image stream** :
+
 `oc  get is`{{execute}}
+
+List **basic-app** application associated service :
 
 `oc  get is basic-app -o json | jq '.' `{{execute}}
 
 
+List services :
 
 `oc  get service `{{execute}}
 
+Display service create for **basic-app** :
+
+`oc  get  svc basic-app -o yaml  `{{execute}}
+
+Check if there's a route create for the application :
+
 `oc  get route `{{execute}}
+
+Create a route :
 
 `oc  expose svc/basic-app `{{execute}}
 
 
-`oc  get  svc basic-app -o yaml  `{{execute}}
+
 
 `oc  get route `{{execute}}
 
