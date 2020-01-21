@@ -6,19 +6,19 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Manipulate users",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 -  Login with token",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - Use API",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Step 4 - Console login",
         "text": "step4.md"
       }
     ],
