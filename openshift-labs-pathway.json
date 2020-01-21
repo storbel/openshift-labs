@@ -83,6 +83,11 @@
       "course_id": "openshift-complete-example",
       "title": "Lab 16 - Complete application deployment with OpenShift",
       "description": "Verify understand of Openshift concepts"
+    },
+    {
+      "course_id": "openshift-application-deployment",
+      "title": "Lab XX - Complete application deployment with OpenShift",
+      "description": "Verify understand of Openshift concepts"
     }
   ]
 }
