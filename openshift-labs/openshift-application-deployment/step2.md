@@ -81,6 +81,11 @@ Follow in real-time the image build process by following the build pod logs :
 
 Follow the logs until getting **Push successful**
 
+`oc  expose svc/advanced-app `{{execute}}
 
+Access to the application via the link belwo :
+
+
+http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 
