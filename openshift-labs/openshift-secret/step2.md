@@ -41,7 +41,7 @@ Display the secret :
 Create  a Pod that mount the secret as a volume :
 
 
-`oc create -f secret-vol-pod`{{execute}}
+`oc create -f secret-vol-pod.yml`{{execute}}
 
 List pod status :
 
@@ -58,6 +58,10 @@ Get the pod name for  **secret-vol-pod**:
 Display the Pod name :
 
 ` echo $POD`{{execute}}
+
+Describe the Pod to volume mounts  configured :
+
+` oc describe pod $POD `{{execute}}
 
 Enter the container shell :
 

@@ -29,5 +29,5 @@ Deploy a sample application :
 
 `oc new-app nginx-example`{{execute}}
 
-`oc expose svc/nginx`{{execute}}
+`oc expose svc/nginx-example`{{execute}}
 
