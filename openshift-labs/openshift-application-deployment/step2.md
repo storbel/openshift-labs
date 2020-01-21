@@ -8,8 +8,12 @@
 
 `oc get pod  `{{execute}}
 
-` POD=$(oc get pod|grep basic-app | grep Running | awk '{print $1}')`{{execute}}
 
+`oc logs -f basic-app-1-build`{{execute}}
+
+Follow the logs until getting **Push successful**
+
+` POD=$(oc get pod|grep basic-app | grep Running | awk '{print $1}')`{{execute}}
 
 ` echo $POD`{{execute}}
 
