@@ -31,10 +31,3 @@ Connect to Database :
 `CREATE TABLE dbversion (id SERIAL PRIMARY KEY,version VARCHAR(30) NOT NULL);
 INSERT INTO dbversion (version) VALUES ('1.0');
 `{{execute}}
-
-`\d`{{execute}}
-
-
-Copy the SQL file to the POD:
-
-`oc rsync demodb.sql $POD:/tmp`{{execute}}
