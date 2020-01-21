@@ -3,9 +3,9 @@
 Deploy a sample application :
 
 
-`oc new-app nginx`{{execute}}
+`oc new-app nginx-example`{{execute}}
 
-oc expose svc/nginx
+`oc expose svc/nginx`{{execute}}
 
 
 List ConfigMap present on the project **acs**
