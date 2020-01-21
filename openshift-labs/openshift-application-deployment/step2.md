@@ -62,7 +62,7 @@ http://basic-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.kataco
 
 Create an application from a specific branch :
 
-oc new-app https://github.com/storbel/basic-app.git#advanced --name advanced-app`{{execute}}
+`oc new-app https://github.com/storbel/basic-app.git#advanced --name advanced-app`{{execute}}
 
 `oc status `{{execute}}
 
