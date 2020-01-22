@@ -11,15 +11,15 @@
       },
       {
         "title": "Step 2 -  Login with token & API",
-        "text": "step2.md"
+        "text": "use_token.md"
       },
       {
         "title": "Step 3 - Console login",
-        "text": "step3.md"
+        "text": "user_and_role_mgmt.md"
       },
       {
         "title": "Step 4 - ServiceAccount",
-        "text": "step4.md"
+        "text": "serviceaccount.md"
       }
     ],
     "intro": {
