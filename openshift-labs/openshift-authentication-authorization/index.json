@@ -6,16 +6,16 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Manipulate users",
+        "title": "Step 1 - Users contexts",
         "text": "user_management.md"
+      },
+      {
+        "title": "Step 3 - Users and roles management",
+        "text": "user_and_role_mgmt.md"
       },
       {
         "title": "Step 2 -  Login with token & API",
         "text": "use_token.md"
-      },
-      {
-        "title": "Step 3 - Console login",
-        "text": "user_and_role_mgmt.md"
       }
 
     ],

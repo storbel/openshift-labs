@@ -2,3 +2,6 @@ A user is an entity that interacts with the OpenShift Container Platform API. Th
 
 This lab describes the management of user accounts, including how new user accounts are created in OpenShift Container Platform and how they can be deleted.
 
+- User contexts
+- Users and roles management
+- Login with token & API
