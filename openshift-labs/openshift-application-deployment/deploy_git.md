@@ -91,7 +91,7 @@ Build a new application based on the Dockerfile image definintion on myapp/Docke
 
 `oc new-app myapp --strategy=docker`{{execute}}
 
-Delete application myapp and all it's components : 
+Delete application myapp and all it's components :
 
 `oc delete all -l app=myapp`{{execute}}
 
@@ -122,4 +122,29 @@ Follow the logs until getting **Push successful**
 Access to the application via the link belwo :
 
 http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+
+Scale the application from 1 to 5 Replicas :
+
+
+`oc scale --replicas=5 dc/advanced-app -n acs`{{execute}}
+
+
+Scale Down the application to 3 Replicas :
+
+`oc scale --replicas=3 dc/advanced-app -n acs`{{execute}}
+
+
+`oc get pods -o wide -l app=advanced-app`{{execute}}
+
+Modify the index.php page code source on  your git repository, then redeploy application :
+
+
+Rebuild the application
+
+`oc rollout latest dc/advanced-app -n acs`{{execute}}
+
+
+Change rollout Strategy :
+
 

@@ -7,28 +7,29 @@
     "steps": [
       {
         "title": "Step 1 -  Connect to cluster",
-        "text": "step1.md"
+        "text": "prepare_env.md"
       },
       {
         "title": "Step 2 -  Deploy application from Source git",
-        "text": "step2.md"
+        "text": "deploy_git.md"
       },
       {
         "title": "Step 3 - Creating an Application From an Image",
-        "text": "step3.md"
+        "text": "deploy_image.md"
       },
       {
         "title": "Step 4 - Creating an Application From a Template",
-        "text": "step4.md"
+        "text": "deploy_template.md"
       },
       {
         "title": "Step 5 - Creating an Application Using the Web Console",
-        "text": "step5.md"
+        "text": "deploy_console.md"
       }
     ],
     "assets": {
       "host01": [
-          {"file": "demodb.sql", "target": "/root", "chmod": "+x"}
+          {"file": "demodb.sql", "target": "/root"},
+          {"file": "label_selectors.yml", "target": "/root"}
       ]
     },
     "intro": {
