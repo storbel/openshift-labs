@@ -16,11 +16,8 @@
       {
         "title": "Step 3 - Console login",
         "text": "user_and_role_mgmt.md"
-      },
-      {
-        "title": "Step 4 - ServiceAccount",
-        "text": "serviceaccount.md"
       }
+
     ],
     "intro": {
       "text": "intro.md"
