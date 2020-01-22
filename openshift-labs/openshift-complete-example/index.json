@@ -2,7 +2,7 @@
   "title": "Openshift full example",
   "description": "This lab is a full example of the most common components of Openshift application deployment",
   "difficulty": "Intermediate",
-  "time": "40",
+  "time": "90",
   "details": {
     "steps": [
       {
