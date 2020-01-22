@@ -5,7 +5,11 @@
     -e MYSQL_USER=acs_user \
     -e MYSQL_PASSWORD=acs2020 \
     -e MYSQL_DATABASE=ocpdemo`{{execute}}
-OOPS!!!, we haven't the intention to create a mysql database, but a PostgrSQL one, please remove all the components created related to the application database
+    
+    
+**OOPS!!!**
+
+we haven't the intention to create a mysql database, but a PostgrSQL one, please remove all the components created related to the application database
 to do so, Openshift has a selector feature that enable to delete any element containing a specific label
 
 

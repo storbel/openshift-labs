@@ -91,6 +91,10 @@ Build a new application based on the Dockerfile image definintion on myapp/Docke
 
 `oc new-app myapp --strategy=docker`{{execute}}
 
+Delete application myapp and all it's components : 
+
+`oc delete all -l app=myapp`{{execute}}
+
 
 Create an application from a specific branch :
 
