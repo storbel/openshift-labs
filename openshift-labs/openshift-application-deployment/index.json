@@ -24,6 +24,11 @@
       {
         "title": "Step 5 - Creating an Application Using the Web Console",
         "text": "deploy_console.md"
+      },
+      ,
+      {
+        "title": "Step 6 - Manage deployment with labels and selectors",
+        "text": "labels_and_selectors.md"
       }
     ],
     "assets": {

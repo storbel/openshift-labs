@@ -1,0 +1,198 @@
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    application: amadeus
+    country: france
+  name: pod-d-a-f
+spec:
+
+  replicas: 1
+  selector:
+    application: amadeus
+    country: france
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        application: amadeus
+        country: france
+    spec:
+      nodeSelector:
+        infra: dev
+      containers:
+      - image: openshift/hello-openshift
+        name: hello-openshift
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8888
+          protocol: TCP
+        resources: {}
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    application: amadeus
+    country: france
+  name: pod-p-am-i
+spec:
+
+  replicas: 1
+  selector:
+    application: amadeus
+    country: italy
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        application: amadeus
+        country: italy
+    spec:
+      nodeSelector:
+        infra: prod
+      containers:
+      - image: openshift/hello-openshift
+        name: hello-openshift
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8888
+          protocol: TCP
+        resources: {}
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    application: amadeus
+    country: france
+  name: pod-d-av-f
+spec:
+
+  replicas: 1
+  selector:
+    application: avia
+    country: france
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        application: avia
+        country: france
+    spec:
+      nodeSelector:
+        infra: prod
+      containers:
+      - image: openshift/hello-openshift
+        name: hello-openshift
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8888
+          protocol: TCP
+        resources: {}
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    application: avia
+    country: france
+  name: pod-d-av-f
+spec:
+
+  replicas: 1
+  selector:
+    application: avia
+    country: france
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        application: avia
+        country: france
+    spec:
+      nodeSelector:
+        infra: dev
+      containers:
+      - image: openshift/hello-openshift
+        name: hello-openshift
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8888
+          protocol: TCP
+        resources: {}
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    application: amadeus
+    country: france
+  name: pod-p-a-f
+spec:
+
+  replicas: 1
+  selector:
+    application: amadeus
+    country: france
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        application: amadeus
+        country: france
+    spec:
+      nodeSelector:
+        infra: prod
+      containers:
+      - image: openshift/hello-openshift
+        name: hello-openshift
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8888
+          protocol: TCP
+        resources: {}
+---
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  labels:
+    application: amadeus
+    country: france
+  name: pod-p-a-i
+spec:
+
+  replicas: 1
+  selector:
+    application: avia
+    country: italy
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        application: avia
+        country: italy
+    spec:
+      nodeSelector:
+        infra: prod
+      containers:
+      - image: openshift/hello-openshift
+        name: hello-openshift
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        - containerPort: 8888
+          protocol: TCP
+        resources: {}
