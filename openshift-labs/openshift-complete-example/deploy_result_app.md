@@ -5,13 +5,20 @@ Deploy result application :
 `oc new-app https://github.com/mmumshad/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080`{{execute}
 
 
+List Created pod and their status, wait for them to be in **running** state :
+
 `oc get pod`{{execute}}
 
+Expose the Service to create a route for the application : 
 
-`oc get all -l app=result`{{execute}}
+
+`oc expose svc/result`{{execute}}
 
 
-` `{{execute}
+List all the components created for this application : 
+
+
+`oc get all -l app=vote`{{execute}}
 
 
 

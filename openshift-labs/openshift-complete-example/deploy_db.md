@@ -14,7 +14,13 @@ Create a new application based on postgeSQL named db:
 `oc logs -f db-1-build`{{execute}
 
 
+List Created pod and their status, wait for them to be in **running** state :
+
 `oc get pod`{{execute}}
+
+
+
+List all the components created for this application : 
 
 
 `oc get all -l app=db`{{execute}}
