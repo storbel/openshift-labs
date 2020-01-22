@@ -2,7 +2,7 @@
 Deploy result application : 
 
 
-`oc new-app https://github.com/mmumshad/example-voting-app.git --context-dir=worker   --strategy=docker `{{execute}
+`oc new-app https://github.com/mmumshad/example-voting-app.git --context-dir=worker --name=worker  --strategy=docker `{{execute}
 
 
 `oc get pod`{{execute}}
