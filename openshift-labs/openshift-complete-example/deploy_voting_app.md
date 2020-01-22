@@ -2,7 +2,7 @@
 Deploy vote application : 
 
 
-`oc new-app https://github.com/mmumshad/example-voting-app.git --name=vote --context-dir=vote`{{execute}}
+`oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote`{{execute}}
 
 
 List Created pod and their status, wait for them to be in **running** state :

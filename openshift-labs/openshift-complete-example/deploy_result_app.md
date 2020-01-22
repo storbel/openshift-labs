@@ -2,7 +2,7 @@
 Deploy result application : 
 
 
-`oc new-app https://github.com/mmumshad/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080`{{execute}
+`oc new-app https://github.com/storbel/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080`{{execute}
 
 
 List Created pod and their status, wait for them to be in **running** state :
