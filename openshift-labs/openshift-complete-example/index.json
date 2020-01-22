@@ -6,42 +6,49 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Step 1 - Prepare environment",
+        "text": "prepare_environment.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Step 2 - Deploy redis application",
+        "text": "deploy_redis.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Step 3 - Deploy voting-app application",
+        "text": "deploy_voting_app.md"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md"
+        "title": "Step 4 - Deploy db",
+        "text": "deploy_db.md"
       },
       {
-        "title": "Step 5",
-        "text": "step5.md"
+        "title": "Step 5 - Deploy result-app application",
+        "text": "deploy_result_app.md"
       },
       {
-        "title": "Step 6",
-        "text": "step6.md"
+        "title": "Step 6 - Deploy Worker application",
+        "text": "deploy_worker.md"
       },
       {
-        "title": "Step 7",
-        "text": "step7.md"
+        "title": "Step 7 - Create applications yaml",
+        "text": "create_application_yaml.md"
       },
       {
-        "title": "Step 8",
-        "text": "step8.md"
-      },
-      {
-        "title": "Step 9",
-        "text": "step9.md"
+        "title": "Step 8 - Create application template",
+        "text": "create_application_template.md"
       }
     ],
+     "assets": {
+      "host01": [
+          {"file": "db.yml", "target": "/root"},
+          {"file": "project.yml", "target": "/root"},
+          {"file": "redis.yml", "target": "/root"},
+          {"file": "result-app.yml", "target": "/root"},
+          {"file": "voting-app.yml", "target": "/root"},
+          {"file": "worker.yml", "target": "/root"},
+          {"file": "voting-template.yml", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },

@@ -2,7 +2,6 @@
 
  List persistent volumes
 
-
 `oc get pv`{{execute}}
 
  Create persistent volumes for demo :
