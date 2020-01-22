@@ -11,4 +11,3 @@ Deploy vote application :
 `oc get all -l app=vote`{{execute}}
 
 
-` `{{execute}}

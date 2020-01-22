@@ -20,5 +20,5 @@ Create a new application based on postgeSQL named db:
 `oc get all -l app=db`{{execute}}
 
 
-` `{{execute}
+
 
