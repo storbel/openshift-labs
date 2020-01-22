@@ -71,7 +71,7 @@ metadata:
   labels:
     application: amadeus
     country: france
-  name: pod-d-av-f
+  name: pod-p-av-f
 spec:
 
   replicas: 1
