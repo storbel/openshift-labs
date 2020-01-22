@@ -3,7 +3,7 @@
   "welcome": "Microservices based application",
   "description": "This lab is a full example of the most common components of Openshift application deployment",
   "difficulty": "Intermediate",
-  "time": "90",
+  "time": "120",
   "details": {
     "steps": [
       {
