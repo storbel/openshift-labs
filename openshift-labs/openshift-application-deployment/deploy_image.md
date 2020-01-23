@@ -20,7 +20,7 @@ INSERT INTO dbversion (version) VALUES ('1.0');
 `{{execute}}
 
 
-<pre>
+`
 
 sh-4.2$ mysql -u acs_user -p ocpdemo
 Enter password:
@@ -42,10 +42,17 @@ Query OK, 0 rows affected (0.02 sec)
 mysql> INSERT INTO dbversion (version) VALUES ('1.0');
 Query OK, 1 row affected (0.01 sec)
 
-</pre>
+`
 
 Check the web application now : 
 
 
 http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+
+
+Transfer file to  running Pod :
+
+`oc rsync $(oc get pods -l app=database --template='{{range .items}}{{.metadata.name}}{{end}}'):/tmp demodb.sql`{{execute}}
+
 
