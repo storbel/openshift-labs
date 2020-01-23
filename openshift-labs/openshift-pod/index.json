@@ -26,7 +26,8 @@
     ],
     "assets": {
       "host01": [
-          {"file": "two-containers.yml", "target": "/root"}
+          {"file": "two-containers.yml", "target": "/root"},
+          {"file": "pod.yml", "target": "/root"}
       ]
     },
     "intro": {
