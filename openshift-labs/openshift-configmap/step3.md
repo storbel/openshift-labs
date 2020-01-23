@@ -17,19 +17,18 @@ the names and values for the settings:
 `oc get configmap prefs -o json `{{execute}}
 
 
-`oc set env dc/nginx --from configmap/prefs`{{execute}}
+`oc set env dc/nginx-example --from configmap/prefs`{{execute}}
 
 
 
 For more complicated data, you can create the config map using a file as input. Create
 a file called prefs.json containing:
 
-`echo '{
- "hostname": "database",
- "username": "acs_user",
- "password": "acs2020",
- "dbname": "ocpdemo"
-}' > prefs.json `{{execute}}
+`echo '
+ "hostname"="database",
+ "username"="acs_user",
+ "password"="acs2020",
+ "dbname"="ocpdemo"' > prefs.json `{{execute}}
 
 
 To create the config map, instead of using --from-literal, use --from-file:
@@ -46,8 +45,8 @@ The name of the file is used as the key. If it were necessary for the key to be 
 from the name of the file used as input, you would use <key>=blog.json as the argu‐
 ment to the --from-file option, replacing key with the name you want to use.
 To mount a config map into a container as a set of files, run:
-`oc set volume dc/blog --add --configmap-name blog-settings-file \
- --mount-path=/opt/app-root/src/settings`{{execute}}
+
+`oc set volume dc/nginx-example --add --configmap-name prefs-file  --mount-path=/opt/app-root/src/settings`{{execute}}
 
  
  This will result in files being created in the directory specified by the --mount-path

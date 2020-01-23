@@ -26,3 +26,10 @@ List ConfigMap present on the project **acs**
 Display the newly created ConfigMap :
 
 `oc get cm prefs -o yaml`{{execute}}
+
+Delete configMap Prefs : 
+
+`oc delete cm prefs `{{execute}}
+
+
+
