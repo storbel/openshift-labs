@@ -144,6 +144,8 @@ Rebuild the application
 
 `oc rollout latest dc/advanced-app -n acs`{{execute}}
 
+Check what happens on the Openshift Console overview tab
+
 Change rollout Strategy :
 
 `oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'`{{execute}}
