@@ -20,3 +20,4 @@ $ oc get all -o name --selector app=blog
 
 oc new-app openshiftkatacoda/blog-django-py --name blog
 
+	
