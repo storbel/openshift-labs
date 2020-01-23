@@ -5,7 +5,9 @@
     -e MYSQL_USER=acs_user \
     -e MYSQL_PASSWORD=acs2020 \
     -e MYSQL_DATABASE=ocpdemo`{{execute}}
-    
+
+
+`oc get pod -l app=advanced-app`{{execute}}
 
 
 `oc rsh  $(oc get pod -l app=database -o name)`{{execute}}
@@ -44,7 +46,7 @@ Query OK, 1 row affected (0.01 sec)
 
 `
 
-Check the web application now : 
+Check the web application now :
 
 
 http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
@@ -56,30 +58,30 @@ Transfer file to  running Pod :
 `oc rsync $(oc get pods -l app=database --template='{{range .items}}{{.metadata.name}}{{end}}'):/tmp demodb.sql`{{execute}}
 
 
-Patch Deployment : 
+Patch Deployment :
 
 `oc patch -n acs --type=strategic dc database \
  -p '{"spec":{"template":{"spec":{"containers":[{"name":"database","resources": {"limits":{"cpu":"100m","memory":"256Mi"}}}]}}}}'`{{execute}}
 
 
 
-Import image to local container registry : 
+Import image to local container registry :
 
 
 `oc import-image openshiftkatacoda/blog-django-py --confirm`{{execute}}
- 
- 
- 
- Push Image to the Registry : 
- 
+
+
+
+ Push Image to the Registry :
+
  oc create imagestream.
- 
+
 
 $ docker tag blog-django-py \
  registry.pro-us-east-1.openshift.com:443/book/blog-django-py:latest
- 
- 
- 
+
+
+
  $ docker login -u `oc whoami` -p `oc whoami --show-token` \
  registry.pro-us-east-1.openshift.com:443
 Login Succeeded
@@ -103,5 +105,5 @@ images taken from public image registries.
 
 
 
- 
+
 
