@@ -159,5 +159,12 @@ list option:
 `oc set env dc/advanced-app --list`{{execute}}
 
 `
-# deploymentconfigs myapp, container myapp
+deploymentconfigs myapp, container myapp
 color=blue`
+
+
+#### Check the list of the Persistent Volumes :
+
+
+`oc get pv --as system:admin`{{execute}}
+

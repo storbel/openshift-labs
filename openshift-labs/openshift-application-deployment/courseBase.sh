@@ -26,7 +26,9 @@ echo '{
             },
             "spec": {
                 "accessModes": [
-                    "ReadWriteMany"
+                    "ReadWriteOnce",
+                    "ReadWriteMany",
+                    "ReadOnlyMany"
                 ],
                 "capacity": {
                     "storage": "10Gi"
