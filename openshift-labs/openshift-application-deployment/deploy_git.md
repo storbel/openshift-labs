@@ -89,7 +89,7 @@ List the folder files :
 
 Build a new application based on the Dockerfile image definintion on myapp/Dockerfile
 
-`oc new-app myapp --strategy=docker`{{execute}}
+`oc new-app myapp --name=myapp --strategy=docker`{{execute}}
 
 Delete application myapp and all it's components :
 
