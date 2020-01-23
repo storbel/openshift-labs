@@ -76,25 +76,13 @@ You can override the build strategy by setting the --strategy flag to either doc
 Create an application with Docker strategy :
 
 
-a folder containing a Dockerfile has been created for you.
-
-List the folder files :
-`ls myapp`{{execute}}
-
-Build a new application based on the Dockerfile image definintion on myapp/Dockerfile
-
-`oc new-app myapp --name=myapp --strategy=docker`{{execute}}
-
-Delete application myapp and all it's components :
-
-`oc delete all -l app=myapp`{{execute}}
 
 Deploy from git with **docker** strategy
 
 `oc new-app --name=dbinit --strategy=docker \
  https://github.com/devops-with-openshift/liquibase-example.git `{{execute}}
- 
- 
+
+
 Create an application from a specific branch :
 
 `oc new-app https://github.com/storbel/basic-app.git#advanced --name advanced-app`{{execute}}
@@ -143,9 +131,9 @@ Rebuild the application
 
 `oc rollout latest dc/advanced-app -n acs`{{execute}}
 
-Check of your updates were applied ???? It was not applied as an image build should run first 
+Check of your updates were applied ???? It was not applied as an image build should run first
 
-Start a New build : 
+Start a New build :
 
 `oc start-build bc/advanced-app`{{execute}}
 
@@ -162,7 +150,7 @@ Change rollout Strategy :
 
 `oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'`{{execute}}
 
-Add new environment variable : 
+Add new environment variable :
 `oc set env dc myapp NEW_ENV_VAR=password`{{execute}}
 When the environment variables are updated using oc set env, the application will
 be redeployed automatically with the new configuration. If you want to see what envi‐
