@@ -148,16 +148,16 @@ Check what happens on the Openshift Console overview tab
 
 Change rollout Strategy :
 
-`oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'`{{execute}}
+`oc patch dc advanced-app -p '{"spec":{"strategy":{"type":"Recreate"}}}'`{{execute}}
 
 Add new environment variable :
-`oc set env dc myapp NEW_ENV_VAR=password`{{execute}}
+`oc set env dc advanced-app color=blue`{{execute}}
 When the environment variables are updated using oc set env, the application will
 be redeployed automatically with the new configuration. If you want to see what envi‐
 ronment variables will be set in the container, you can use oc set env with the --
 list option:
-`oc set env dc/myapp --list`{{execute}}
+`oc set env dc/advanced-app --list`{{execute}}
 
 `
 # deploymentconfigs myapp, container myapp
-NEW_ENV_VAR=password`
+color=blue`
