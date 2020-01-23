@@ -136,12 +136,25 @@ Scale Down the application to 3 Replicas :
 
 `oc get pods -o wide -l app=advanced-app`{{execute}}
 
-Modify the index.php page code source on  your git repository, then redeploy application :
+Modify the index.php page code source on  your git repository, then re-deploy application :
 
 
 Rebuild the application
 
 `oc rollout latest dc/advanced-app -n acs`{{execute}}
+
+Check of your updates were applied ???? It was not applied as an image build should run first 
+
+Start a New build : 
+
+`oc start-build bc/advanced-app`{{execute}}
+
+Rebuild the application
+
+`oc rollout latest dc/advanced-app -n acs`{{execute}}
+
+
+
 
 Check what happens on the Openshift Console overview tab
 

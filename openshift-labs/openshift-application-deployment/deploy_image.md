@@ -58,8 +58,50 @@ Transfer file to  running Pod :
 
 Patch Deployment : 
 
- oc patch -n acs --type=strategic dc database \
- -p '{"spec":{"template":{"spec":{"containers":[{"name":"database","resources": {"limits":{"cpu":"100m","memory":"256Mi"}}}]}}}}'
+`oc patch -n acs --type=strategic dc database \
+ -p '{"spec":{"template":{"spec":{"containers":[{"name":"database","resources": {"limits":{"cpu":"100m","memory":"256Mi"}}}]}}}}'`{{execute}}
 
 
+
+Import image to local container registry : 
+
+
+`oc import-image openshiftkatacoda/blog-django-py --confirm`{{execute}}
+ 
+ 
+ 
+ Push Image to the Registry : 
+ 
+ oc create imagestream.
+ 
+
+$ docker tag blog-django-py \
+ registry.pro-us-east-1.openshift.com:443/book/blog-django-py:latest
+ 
+ 
+ 
+ $ docker login -u `oc whoami` -p `oc whoami --show-token` \
+ registry.pro-us-east-1.openshift.com:443
+Login Succeeded
+
+$ docker push registry.pro-us-east-1.openshift.com:443/book/blog-django-py
+
+
+
+
+To allow any applications deployed within a project the ability to run as the user the
+container image specifies, including root, a cluster admin can run against a project
+the command:
+$ oadm policy add-scc-to-user anyuid -z default
+A cluster admin would only want to allow this after the risks associated with running
+the image as root have been assessed. It is never good practice to run as root arbitrary
+images taken from public image registries.
+
+
+
+
+
+
+
+ 
 
