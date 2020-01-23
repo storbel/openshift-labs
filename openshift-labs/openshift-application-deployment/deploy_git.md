@@ -147,4 +147,7 @@ Rebuild the application
 
 Change rollout Strategy :
 
+`oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'`{{execute}}
 
+Add new environment variable : 
+`oc set env dc myapp NEW_ENV_VAR=password`{{execute}}
