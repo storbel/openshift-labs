@@ -155,6 +155,8 @@ When the environment variables are updated using oc set env, the application wil
 be redeployed automatically with the new configuration. If you want to see what envi‐
 ronment variables will be set in the container, you can use oc set env with the --
 list option:
-$ oc set env dc/myapp --list
+`oc set env dc/myapp --list`{{execute}}
+
+`
 # deploymentconfigs myapp, container myapp
-NEW_ENV_VAR=password
+NEW_ENV_VAR=password`
