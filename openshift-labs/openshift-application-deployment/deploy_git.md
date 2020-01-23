@@ -144,7 +144,6 @@ Rebuild the application
 
 `oc rollout latest dc/advanced-app -n acs`{{execute}}
 
-
 Change rollout Strategy :
 
 `oc patch dc myapp -p '{"spec":{"strategy":{"type":"Recreate"}}}'`{{execute}}
