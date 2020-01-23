@@ -7,14 +7,20 @@
     "steps": [
       {
         "title": "Step 1 - Create Pod",
-        "text": "create_pod.md"
+        "text": "prepare_env.md"
       },
       {
         "title": "Step 2 - Pod logging",
-        "text": "pod_logging.md"
+         "text": "create_pod.md"
+        
       },
       {
         "title": "Step 3 - Multi-containers Pod",
+        "text": "pod_logging.md"
+       
+      },
+      {
+        "title": "Step 4 - Multi-containers Pod",
         "text": "two-containers.md"
       }
     ],
