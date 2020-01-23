@@ -18,6 +18,11 @@
         "text": "step3.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "two-containers.yml", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },
