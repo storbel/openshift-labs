@@ -20,21 +20,15 @@ Follow in real-time the image build process by following the build pod logs :
 Follow the logs until getting **Push successful**
 
 
-Get the pod name for  **basic-app**:
-
-` POD=$(oc get pod|grep basic-app | grep Running | awk '{print $1}')`{{execute}}
-
-Display the Pod name :
-
-` echo $POD`{{execute}}
 
 Display Pod **basic-app** details :
 
-`oc get pod $POD -o yaml `{{execute}}
+`oc get  $(oc get pod -l app=basic-app -o name) -o yaml `{{execute}}
+
 
 Display containers configuration :
 
-`oc get pod $POD -o json | jq '.spec.containers'`{{execute}}
+`oc get $(oc get pod -l app=basic-app -o name) -o json | jq '.spec.containers'`{{execute}}
 
 List **building configs** :
 
@@ -95,7 +89,12 @@ Delete application myapp and all it's components :
 
 `oc delete all -l app=myapp`{{execute}}
 
+Deploy from git with **docker** strategy
 
+`oc new-app --name=dbinit --strategy=docker \
+ https://github.com/devops-with-openshift/liquibase-example.git `{{execute}}
+ 
+ 
 Create an application from a specific branch :
 
 `oc new-app https://github.com/storbel/basic-app.git#advanced --name advanced-app`{{execute}}

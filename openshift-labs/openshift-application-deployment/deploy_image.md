@@ -8,16 +8,7 @@
     
 
 
-
-Get the pod name for  **basic-app**:
-
-` POD=$(oc get pod|grep database | grep Running | awk '{print $1}')`{{execute}}
-
-Display the Pod name :
-
-` echo $POD`{{execute}}
-
-`oc rsh $POD`{{execute}}
+`oc rsh  $(oc get pod -l app=database -o name)`{{execute}}
 
 in case of **error**, connect to the Openshift console, and use the Pod terminal  :
 
@@ -53,7 +44,7 @@ Query OK, 1 row affected (0.01 sec)
 
 </pre>
 
-Check the Webapplication now : 
+Check the web application now : 
 
 
 http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
