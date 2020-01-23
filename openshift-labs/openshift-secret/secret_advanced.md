@@ -2,67 +2,71 @@ Secrets such as database credentials can be stored in a config map and passed to
 application using environment variables or in a configuration file. Because 
 secrets is important, OpenShift provides an alternative resource type for handling
 secret data called a **secret**.
+
+
 A generic secret works the same as a config map, but OpenShift manages them inter‐
-nally in a more secure manner. This includes data volumes for secrets being backed
-by temporary file-storage facilities (tmpfs) and never coming to rest on a node.
-Secrets can also only be accessed by service accounts that need them, or to which
-access has been explicitly granted.
-To create a generic secret you can use oc create secret generic, or oc create -f
+nally in a more secure manner. 
+To create a generic secret you can use oc create secret generic, `or oc create -f`
 with a JSON/YAML resource definition for the secret.
 If you only need to store simple key/value pairs, you can create the secret by running
 oc create secret generic and passing the --from-literal option along with the
 names and values for the settings:
-$ oc create secret generic blog-secrets \
+
+`oc create secret generic my-secrets \
  --from-literal DATABASE_USERNAME=user145c30ca \
- --from-literal DATABASE_PASSWORD=EbAYDR1sJsvW
+ --from-literal DATABASE_PASSWORD=EbAYDR1sJsvW`{{execute}}
+ 
+ 
 You can see the definition of the secret by querying the resource created using oc get
 -o json. The key parts of the definition needed to reproduce it are:
-{
- "apiVersion": "v1",
- "kind": "Secret",
- "metadata": {
- "name": "blog-secrets"
- },
- "data": {
- "DATABASE_USERNAME": "dXNlcjE0NWMzMGNh",
- "DATABASE_PASSWORD": "RWJBWURSMXNKc3ZX"
- }
-}
+
+
+` oc get secret my-secrets -o json `{{execute}}
+
+
 You will note that the value for each key under data has been obfuscated by applying
 base64 encoding. If you are creating the resource definition yourself, you will need to
 do the encoding yourself when adding the values. You can create the obfuscated val‐
 ues using the Unix base64 command.
 For convenience, especially when using a secret in a template definition, you can sup‐
 ply the values as clear text, as long as you add them under the stringData field rather
-than the data field:
-{
- "apiVersion": "v1",
- "kind": "Secret",
- "metadata": {
- "name": "blog-secrets"
- },
-90 | Chapter 12: Conguration and Secrets
- "stringData": {
- "DATABASE_USERNAME": "user145c30ca",
- "DATABASE_PASSWORD": "EbAYDR1sJsvW"
- }
-}
+than the data field
+
+
+
+
 Even when created in this way, when queried back the secret will always show the
 data field with values obfuscated. The Unix base64 command can be used to deob‐
 fuscate the values, and an option also exists to reveal the deobfuscated values if view‐
 ing the secret through the web console.
 To pass the settings in this secret as environment variables in a deployment configu‐
 ration, you need to run the extra step of:
-$ oc set env dc/blog --from secret/blog-secrets
+
+
+`oc set env dc/nginx-example --from secret/my-secrets`{{execute}}
+
+<pre>deploymentconfig.apps.openshift.io/nginx-example updated</pre>
+
 The result of running oc set env on the deployment configuration with the --list
 option will now be:
-# deploymentconfigs blog, container blog
-# DATABASE_USERNAME from secret blog-secrets, key DATABASE_USERNAME
-# DATABASE_PASSWORD from secret blog-secrets, key DATABASE_PASSWORD
+
+`oc set env dc/nginx-example --list`{{execute}}
+
+`
+# deploymentconfigs/nginx-example, container nginx-example
+# DATABASE_PASSWORD from secret my-secrets, key DATABASE_PASSWORD
+# DATABASE_USERNAME from secret my-secrets, key DATABASE_USERNAME
+`
+
+
+echo '
+DATABASE_PASSWORD=RWJBWURSMXNKc3ZX
+DATABASE_USERNAME=dXNlcjE0NWMzMGNh
+'> secrets.ini
 To create the secret using a file, instead of using --from-literal use --from-file,
 overriding the key used for the value as necessary:
-$ oc create secret generic blog-webdav-users
---from-file .htdigest=webdav.htdigest
+` oc create secret generic blog-webdav-users --from-file .htdigest=webdav.htdigest `{{execute}}
+
 To mount the secret, use oc set volume, using the --secret-name option to identify
 the secret to use:
 $ oc set volume dc/blog --add --secret-name blog-webdav-users \
