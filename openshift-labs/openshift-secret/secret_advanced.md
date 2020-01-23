@@ -65,7 +65,7 @@ DATABASE_USERNAME=dXNlcjE0NWMzMGNh
 '> secrets.ini
 To create the secret using a file, instead of using --from-literal use --from-file,
 overriding the key used for the value as necessary:
-` oc create secret generic blog-webdav-users --from-file .htdigest=webdav.htdigest `{{execute}}
+` oc create secret generic mydb_secrets --from-file=.mydb_sercrets=secrets.ini `{{execute}}
 
 To mount the secret, use oc set volume, using the --secret-name option to identify
 the secret to use:
