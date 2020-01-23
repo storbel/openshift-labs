@@ -115,4 +115,3 @@ login with the **master** account :
 
 
 Be very careful when granting cluster administrator role to a user. Ensure that the user truly needs that level of power within the cluster. When OpenShift is first installed, a certificate based user is created and the credentials are saved in admin.kubeconfig. This cluster administrator user can do absolutely anything to any resource on the entire cluster, which can result in destruction if not used carefully.
-
