@@ -3,14 +3,15 @@
 
 Create a new application based on postgeSQL named db:
 
-`oc new-app openshift/postgresql-ephemeral --name db \
-    -e DATABASE_SERVICE_NAME=db \
-    -e POSTGRESQL_USER=postgres_user \
-    -e POSTGRESQL_DATABASE=postgres \
-    -e POSTGRESQL_PASSWORD=postgres_password`{{execute}}
+
+`oc new-app mysql --name db \
+    -e MYSQL_USER=postgres_user \
+    -e MYSQL_PASSWORD=postgres_password \
+    -e MYSQL_DATABASE=postgres`{{execute}}
+
 
 `oc get pod`{{execute}}
-    
+
 
 
 List Created pod and their status, wait for them to be in **running** state :
@@ -19,7 +20,7 @@ List Created pod and their status, wait for them to be in **running** state :
 
 
 
-List all the components created for this application : 
+List all the components created for this application :
 
 
 `oc get all -l app=db`{{execute}}
