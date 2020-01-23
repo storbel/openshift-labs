@@ -30,7 +30,7 @@ The command below my help you, as there's no label infra=dev of infra=prod to ho
 
 
 
-`oc get nodes -o wide`{{execute}}
+`oc get nodes -o wide --as system:admin`{{execute}}
 
 
 label the master node to have the label **infra=dev**, and check the pods status :
@@ -56,7 +56,7 @@ Check the now labels now :
 
 Check the pod status now :
 
-`oc get pod -o wide`{{execute}}
+`oc get pod -o wide --as system:admin`{{execute}}
 
 As you may see, the pods with a node selector infra=dev as still up and running on the master now, even that it's now longer labeled infra=dev
 
@@ -64,13 +64,8 @@ This is not a bug, but working as expected, as the nodeSelector tag is only used
 
 #### Select nodes based on labels and selectors
 
-List only application deployed on nodes of **dev**
 
-
-List only application deployed on nodes of **prod**
-
-
-List only application that belong to application **amadeus**
+List only pods that belong to application **amadeus**
 
 
 `oc get pod -l application=amadeus`{{execute}}
@@ -79,8 +74,20 @@ or
 
 `oc get pod --selector='application=amadeus'`{{execute}}
 
+List only pod that belong to application **avia**
 
-List only application that belong to application **avia** and deployed on node **dev**
+`oc get pod -l application=avia`{{execute}}
 
+List only pod that belong to application **amadeus** and located in **france** :
+
+`oc get pod --selector='application=amadeus,country=france'`{{execute}}
+
+
+Delete Pod
 
 use `oc delete pod POD_NAME` to delete a pod, a new Pod will be spinned as we specified at least one replica need to be up on the DeploymentConfig
+
+
+Delete Pods located in France :
+
+`oc delete pod -l country=france`{{execute}}
