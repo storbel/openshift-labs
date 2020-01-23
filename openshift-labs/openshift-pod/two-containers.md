@@ -14,8 +14,9 @@ oc logs my-pod
 # dump pod logs, with label name=myLabel (stdout)                              
 oc logs -l name=myLabel     
 # dump pod logs (stdout) for a previous instantiation of a container                   
-oc logs my-pod --previous                      
-oc logs my-pod -c my-container                 # dump pod container logs (stdout, multi-container case)
+oc logs my-pod --previous       
+# dump pod container logs (stdout, multi-container case)               
+oc logs my-pod -c my-container                
 oc logs -l name=myLabel -c my-container        # dump pod logs, with label name=myLabel (stdout)
 oc logs my-pod -c my-container --previous      # dump pod container logs (stdout, multi-container case) for a previous instantiation of a container
 oc logs -f my-pod                              # stream pod logs (stdout)

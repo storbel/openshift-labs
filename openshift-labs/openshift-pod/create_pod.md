@@ -1,26 +1,21 @@
-Logging in to the Cluster
-When the OpenShift playground is created you will be logged in initially as a cluster admin on the command line. This will allow you to perform operations which would normally be performed by a cluster admin.
 
-Before creating any applications, it is recommended you login as a distinct user. This will be required if you want to log in to the web console and use it.
 
-To login to the OpenShift cluster from the Terminal run:
 
-`oc login -u developer -p developer  [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
-This will log you in using the credentials:
-Username: developer
-Password: developer
-Use the same credentials to log into the web console.
 
-In order that you can still run commands from the command line as a cluster admin, the sudoer role has been enabled for the developer account. To execute a command as a cluster admin use the --as system:admin option to the command. For example:
+oc apply -f pod.yml
 
-`oc get projects --as system:admin`{{execute}}
 
-Creating your own Project
-To create a new project called acs run the command:
 
-`oc new-project acs`{{execute}}
+oc run -i --tty busybox --image=busybox -- sh  # Run pod as interactive shell
+oc run nginx --image=nginx --restart=Never -n 
+mynamespace                                         # Run pod nginx in a specific namespace
+oc run nginx --image=nginx --restart=Never     # Run pod nginx and write its spec into a file called pod.yaml
+--dry-run -o yaml > pod.yaml
 
-You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
+oc attach my-pod -i                            # Attach to Running Container
+oc port-forward my-pod 5000:6000               # Listen on port 5000 on the local machine and forward to port 6000 on my-pod
+oc exec my-pod -- ls /                         # Run command in existing pod (1 container case)
+oc exec my-pod -c my-container -- ls /         # Run command in existing pod (multi-container case)
+oc top pod POD_NAME --containers               # Show metrics for a given pod and its containers
 
-`oc project acs`{{execute}}
