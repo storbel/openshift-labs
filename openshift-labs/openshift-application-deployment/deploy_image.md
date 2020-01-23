@@ -56,3 +56,10 @@ Transfer file to  running Pod :
 `oc rsync $(oc get pods -l app=database --template='{{range .items}}{{.metadata.name}}{{end}}'):/tmp demodb.sql`{{execute}}
 
 
+Patch Deployment : 
+
+ oc patch -n acs --type=strategic dc database \
+ -p '{"spec":{"template":{"spec":{"containers":[{"name":"database","resources": {"limits":{"cpu":"100m","memory":"256Mi"}}}]}}}}'
+
+
+
