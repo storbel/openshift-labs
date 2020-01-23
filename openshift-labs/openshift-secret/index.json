@@ -2,7 +2,7 @@
   "title": "Openshift Secret lab ",
   "description": "This lab help understand Secret usage and cli associated",
   "difficulty": "Intermediate",
-  "time": "20",
+  "time": "30",
   "details": {
     "steps": [
       {
@@ -16,6 +16,10 @@
       {
         "title": "Step 3",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Further with Secrets",
+        "text": "secret_advanced.md"
       }
     ],
     "assets": {
