@@ -28,6 +28,10 @@
       {
         "title": "Step 6 - Manage deployment with labels and selectors",
         "text": "labels_and_selectors.md"
+      },
+      {
+        "title": "Step 7 - Blue Green Deployment Strategy",
+        "text": "blue_green.md"
       }
     ],
     "assets": {
