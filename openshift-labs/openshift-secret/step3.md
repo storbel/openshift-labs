@@ -16,21 +16,15 @@ List the status of all the components on the project **acs** :
 
 `oc status --suggest`{{execute}}
 
-Get the pod name for  **secret-vol-pod**:
 
-` POD=$(oc get pod|grep secret-env-pod | grep Running | awk '{print $1}')`{{execute}}
-
-Display the Pod name :
-
-` echo $POD`{{execute}}
 
 Describe the Pod to check ENV vars configured :
 
-` oc describe pod $POD `{{execute}}
+` oc describe $(oc get pod -l app=secret-env-pod -o name)  `{{execute}}
 
 Enter the container shell :
 
-`oc rsh $POD`{{execute}}
+`oc rsh $(oc get pod -l app=secret-env-pod -o name) `{{execute}}
 
 in case of error, try to access directly the pod terminal via the link blow :
 
