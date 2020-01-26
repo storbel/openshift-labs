@@ -28,4 +28,4 @@ Display the new **svc/mysql** :
 Access to the new Service :
 
 
-curl [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:30306
+`curl [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:30306`{{execute}}

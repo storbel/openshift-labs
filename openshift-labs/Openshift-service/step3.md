@@ -2,7 +2,7 @@
 
 get the service ip :
 
-`oc get svc -i wide`{{execute}}
+`oc get svc -o wide`{{execute}}
 
 Check the cluster service CIDR configuration :
 
