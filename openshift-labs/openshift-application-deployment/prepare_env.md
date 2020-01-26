@@ -12,6 +12,10 @@ Username: developer
 Password: developer
 Use the same credentials to log into the web console.
 
+Create project **acs** :
+
+`oc new-project acs`{{execute}}
+
 change to the project **acs** from the command line run the command:
 
 `oc project acs`{{execute}}
