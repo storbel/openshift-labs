@@ -5,7 +5,7 @@ Advanced topics
 
 Get the pod name :
 
-` POD=$(oc get pod|grep nginx | grep Running | awk '{print $1}')`{{execute}}
+` POD=$(oc get pod|grep hello-openshift | grep Running | awk '{print $1}')`{{execute}}
 
 Display the Pod name :
 

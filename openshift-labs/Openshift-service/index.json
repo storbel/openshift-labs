@@ -26,6 +26,11 @@
         "text": "nodeport.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "nodeport.yml", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },

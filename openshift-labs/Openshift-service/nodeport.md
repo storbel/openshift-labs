@@ -4,7 +4,7 @@
 Create a new application :
 
 
-oc new-app openshift/mysql-ephemeral --name database     -e MYSQL_USER=acs_user     -e MYSQL_PASSWORD=acs2020     -e MYSQL_DATABASE=ocpdemo
+`oc new-app openshift/mysql-ephemeral --name database     -e MYSQL_USER=acs_user     -e MYSQL_PASSWORD=acs2020     -e MYSQL_DATABASE=ocpdemo`{{execute}}
 
 Display the actual **svc/mysql** :
 
@@ -28,4 +28,4 @@ Display the new **svc/mysql** :
 Access to the new Service :
 
 
-curl https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:30306
+curl [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:30306
