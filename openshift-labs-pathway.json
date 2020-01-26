@@ -76,24 +76,5 @@
     }
 
 
-    ////
-    ,
-    {
-      "course_id": "openshift-monitoring",
-      "title": "Lab 15 - Monitoring with OpenShift",
-      "description": "Verify understand of Monitoring concepts"
-    },
-    {
-      "course_id": "openshift-route",
-      "title": "Lab 06 - Route with OpenShift",
-      "description": "Verify understand of Route"
-    },
-    {
-      "course_id": "openshift-project",
-      "title": "Lab 02 - Project with OpenShift",
-      "description": "Verify understand of Project"
-    }
-    ////
-
   ]
 }
