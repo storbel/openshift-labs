@@ -32,6 +32,10 @@
       {
         "title": "Step 7 - Blue Green Deployment Strategy",
         "text": "blue_green.md"
+      },
+      {
+        "title": "Step 8 - Jenkins Build",
+        "text": "jenkins_build.md"
       }
     ],
     "assets": {
