@@ -1,6 +1,6 @@
 {
-  "title": "Openshift Storage ",
-  "description": "This lab help manipulate storageClass, persistent volume and Persistent  volume claims",
+  "title": "Openshift Network ",
+  "description": "This lab help checking network configurations",
   "difficulty": "Advanced",
   "time": "30",
   "details": {
@@ -11,29 +11,15 @@
       },
       {
         "title": "Step 2",
-        "text": "create_volumes.md"
+        "text": "check_network_configurations.md"
       },
       {
         "title": "Step 3",
         "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
       }
     ],
-    "assets": {
-      "host01": [
-          {"file": "volumes.json", "target": "/root", "chmod": "+x"}
-      ]
-    },
     "intro": {
-      "text": "intro.md",
-      "courseData": "courseBase.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"

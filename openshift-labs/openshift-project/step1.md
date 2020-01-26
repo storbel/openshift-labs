@@ -29,3 +29,8 @@ You could instead create the project from the web console. If you do this, to ch
 Check the Current project  :
 
 `oc project -q`{{execute}}
+
+
+Check the Current project  :
+
+`oc de -q`{{execute}}
