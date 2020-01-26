@@ -1,3 +1,6 @@
+oc types
+
+
 $ oc help
 For details on common options accepted by all commands, run it with the options
 command:
@@ -13,11 +16,10 @@ curl -H "Authorization: Bearer $TOKEN" $URL
 
 
 
-oc status 
+oc status
 
 
 $ oc get all -o name --selector app=blog
 
 oc new-app openshiftkatacoda/blog-django-py --name blog
 
-	

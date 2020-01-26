@@ -15,3 +15,8 @@ Use the same credentials to log into the web console.
 change to the project **acs** from the command line run the command:
 
 `oc project acs`{{execute}}
+
+
+Check the Current project  :
+
+`oc project -q`{{execute}}

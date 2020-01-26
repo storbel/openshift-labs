@@ -21,3 +21,9 @@ To create a new project called acs run the command:
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 
 `oc project acs`{{execute}}
+
+
+
+Check the Current project  :
+
+`oc project -q`{{execute}}

@@ -158,8 +158,7 @@ ronment variables will be set in the container, you can use oc set env with the 
 list option:
 `oc set env dc/advanced-app --list`{{execute}}
 
-`
-deploymentconfigs myapp, container myapp
+`deploymentconfigs myapp, container myapp
 color=blue`
 
 

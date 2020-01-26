@@ -37,7 +37,8 @@
     "assets": {
       "host01": [
           {"file": "demodb.sql", "target": "/root"},
-          {"file": "labels_selectors.yml", "target": "/root"}
+          {"file": "labels_selectors.yml", "target": "/root"},
+          {"file": "jenkins_build.yml", "target": "/root"}
       ]
     },
     "intro": {
