@@ -5,16 +5,16 @@ Another Build type rater than **Source** and **Docker**, we have **Jenkins**
 
 In this part we will create a new BuildConfig with a Jenkins Pipeline
 
-Read the yaml definition file **jenkins_build.yaml** :
+Read the yaml definition file **jenkins_build.yml** :
 
-`cat jenkins_build.yaml`{{execute}}
+`cat jenkins_build.yml`{{execute}}
 
 Make  a Dry-run of the build creation  :
-`oc create -f jenkins_build.yaml -dry-run -o yaml`{{execute}}
+`oc create -f jenkins_build.yml -dry-run -o yaml`{{execute}}
 
 Create the BuildConfig now :
 
-`oc create -f jenkins_build.yaml`{{execute}}
+`oc create -f jenkins_build.yml`{{execute}}
 
 Check the new  build configs :
 
