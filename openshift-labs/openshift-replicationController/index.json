@@ -11,13 +11,18 @@
       },
       {
         "title": "Step 2",
-        "text": "step2.md"
+        "text": "replication_controller.md"
       },
       {
         "title": "Step 3",
         "text": "step3.md"
       }
     ],
+    "assets": {
+      "host01": [
+          {"file": "replication_controller.yml", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md"
     },

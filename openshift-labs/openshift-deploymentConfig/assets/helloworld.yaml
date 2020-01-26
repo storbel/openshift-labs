@@ -1,16 +1,16 @@
 kind: "DeploymentConfig"
 apiVersion: "v1"
 metadata:
-  name: "frontend"
+  name: "hello"
 spec:
   template:
     metadata:
       labels:
-        name: "frontend"
+        name: "hello"
     spec:
       containers:
         - name: "helloworld"
-          image: "openshift/origin-ruby-sample"
+          image: "openshift/hello-openshift"
           ports:
             - containerPort: 8080
               protocol: "TCP"
@@ -24,9 +24,6 @@ spec:
           - "helloworld"
         from:
           kind: "ImageStreamTag"
-          name: "origin-ruby-sample:latest"
+          name: "hello-openshift:latest"
   strategy:
     type: "Rolling"
-  paused: false
-  revisionHistoryLimit: 2
-  minReadySeconds: 0
