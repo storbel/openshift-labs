@@ -9,11 +9,6 @@
       "description": "Docker essentials for OpenShift understanding"
     },
     {
-      "course_id": "openshift-project",
-      "title": "Lab 02 - Project with OpenShift",
-      "description": "Verify understand of Project"
-    },
-    {
       "course_id": "openshift-pod",
       "title": "Lab 03 - Pod with OpenShift",
       "description": "Verify understand of Pod"
@@ -27,11 +22,6 @@
       "course_id": "openshift-service",
       "title": "Lab 05 - Service with OpenShift",
       "description": "Verify understand of Service"
-    },
-    {
-      "course_id": "openshift-route",
-      "title": "Lab 06 - Route with OpenShift",
-      "description": "Verify understand of Route"
     },
     {
       "course_id": "openshift-secret",
@@ -75,19 +65,35 @@
       "description": "Verify understand of Quota concepts"
     },
     {
-      "course_id": "openshift-monitoring",
-      "title": "Lab 15 - Monitoring with OpenShift",
-      "description": "Verify understand of Monitoring concepts"
-    },
-    {
       "course_id": "openshift-complete-example",
       "title": "Lab 16 - Complete application deployment with OpenShift",
       "description": "Verify understand of Openshift concepts"
     },
     {
       "course_id": "openshift-application-deployment",
-      "title": "Lab XX - Complete application deployment with OpenShift",
+      "title": "Lab Summary - Complete application deployment with OpenShift",
       "description": "Verify understand of Openshift concepts"
     }
+
+
+    ////
+    ,
+    {
+      "course_id": "openshift-monitoring",
+      "title": "Lab 15 - Monitoring with OpenShift",
+      "description": "Verify understand of Monitoring concepts"
+    },
+    {
+      "course_id": "openshift-route",
+      "title": "Lab 06 - Route with OpenShift",
+      "description": "Verify understand of Route"
+    },
+    {
+      "course_id": "openshift-project",
+      "title": "Lab 02 - Project with OpenShift",
+      "description": "Verify understand of Project"
+    }
+    ////
+
   ]
 }
