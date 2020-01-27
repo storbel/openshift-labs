@@ -24,17 +24,7 @@ Display the new **svc/mysql** :
 `oc describe svc mysql`{{execute}}
 
 
-
 Access to the new Service :
 
 `telnet localhost 30306`{{execute}}
 
-Access via mysql :
-
-Install mysql client :
-
-`yum install mysql -y`{{execute}}
-
-
-
-`mysql  -u USER -p -h localhost`{{execute}}
