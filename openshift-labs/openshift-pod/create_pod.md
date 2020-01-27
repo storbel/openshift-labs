@@ -12,8 +12,7 @@
  Run pod nginx in a specific namespace mynamespace
  Run pod nginx and write its spec into a file called pod.yaml
 `oc run nginx --image=nginx    --dry-run -o yaml > pod.yaml`{{execute}}
-  Attach to Running Container
-`oc attach my-pod -i `{{execute}}
+
  Listen on port 5000 on the local machine and forward to port 6000 on my-pod
 `oc port-forward my-pod 5000:6000   `{{execute}}
  Run command in existing pod (1 container case)
