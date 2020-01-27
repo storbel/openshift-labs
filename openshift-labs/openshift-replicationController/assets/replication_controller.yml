@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: frontend-1
 spec:
-  replicas:
+  replicas: 3
   selector:
     name: frontend
   template:
