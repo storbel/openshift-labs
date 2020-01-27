@@ -27,5 +27,14 @@ Display the new **svc/mysql** :
 
 Access to the new Service :
 
+`telnet localhost 30306`{{execute}}
 
-`curl [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com:30306`{{execute}}
+Access via mysql :
+
+Install mysql client :
+
+`yum install mysql -y`{{execute}}
+
+
+
+`mysql  -u USER -p -h localhost`{{execute}}

@@ -28,6 +28,11 @@ You could instead create the project from the web console. If you do this, to ch
 `oc project acs`{{execute}}
 
 
+Read the file below :
+
+`less helloworld.yaml`{{execute}}
+
+
 Deployment configurations are deploymentConfig OpenShift Container Platform API resources which can be managed with the oc command like any other resource. The following is an example of a deploymentConfig resource:
 
 
@@ -41,3 +46,5 @@ Deployment configurations are deploymentConfig OpenShift Container Platform API 
     - Pause a deployment configuration. This disables the functionality of all triggers and allows for multiple changes on the pod template before actually rolling it out.
     - Revision history limit is the limit of old replication controllers you want to keep around for rolling back. May be omitted. If omitted, old replication controllers will not be cleaned up.
     - Minimum seconds to wait (after the readiness checks succeed) for a pod to be considered available. The default value is 0.
+
+

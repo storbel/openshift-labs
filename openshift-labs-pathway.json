@@ -5,37 +5,37 @@
   "courses": [
     {
       "course_id": "docker-sample",
-      "title": "Lab 01 - Docker Essentials before OpenShift",
+      "title": "Lab 01 - Day 01 - Docker Essentials before OpenShift",
       "description": "Docker essentials for OpenShift understanding"
     },
     {
       "course_id": "openshift-pod",
-      "title": "Lab 03 - Pod with OpenShift",
+      "title": "Lab 03 - Day 01 - Pod with OpenShift",
       "description": "Verify understand of Pod"
     },
     {
       "course_id": "openshift-daemonset",
-      "title": "Lab 04 - Daemonset with OpenShift",
+      "title": "Lab 04 - Day 01 - Daemonset with OpenShift",
       "description": "Verify understand of daemonset"
     },
     {
       "course_id": "openshift-service",
-      "title": "Lab 05 - Service with OpenShift",
+      "title": "Lab 05 - Day 01 - Service with OpenShift",
       "description": "Verify understand of Service"
     },
     {
       "course_id": "openshift-secret",
-      "title": "Lab 07 - Secret with OpenShift",
+      "title": "Lab 07 - Day 01 - Secret with OpenShift",
       "description": "Verify understand of Secret"
     },
     {
       "course_id": "openshift-configmap",
-      "title": "Lab 08 - Configmap with OpenShift",
+      "title": "Lab 08 - Day 01 - Configmap with OpenShift",
       "description": "Verify understand of configmap"
     },
     {
       "course_id": "openshift-replicationController",
-      "title": "Lab 09 - ReplicationController with OpenShift",
+      "title": "Lab 09 - Day 01 - ReplicationController with OpenShift",
       "description": "Verify understand of ReplicationController"
     }
 
