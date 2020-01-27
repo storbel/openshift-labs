@@ -40,7 +40,7 @@ List persistent volume and check that you have a new volume
 
  Display the newly created PV
 
-`oc describe pv new-pv`{{execute}}
+`oc describe pv pv-mypv`{{execute}}
 
  Edit the pv-03 to accept also the RWX accessMode
 
@@ -56,6 +56,8 @@ spec:
 ...
 
 </pre>
+
+
 `oc edit pv pv-03`{{execute}}
 
 <pre>

@@ -12,6 +12,7 @@ echo "FROM nginx:alpine
 ADD . /usr/share/nginx/html
 " > myapp/Dockerfile
 
+mkdir /data; chmod a+rwx /data
 for pv_dir in /data/pv-frontend /data/pv-database; do mkdir -p $pv_dir; chmod a+rwx $pv_dir; done
 
 echo '{
