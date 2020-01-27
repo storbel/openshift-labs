@@ -30,7 +30,7 @@ You could instead create the project from the web console. If you do this, to ch
 
 Read the file below :
 
-`less helloworld.yaml`{{execute}}
+`cat helloworld.yaml`{{execute}}
 
 
 Deployment configurations are deploymentConfig OpenShift Container Platform API resources which can be managed with the oc command like any other resource. The following is an example of a deploymentConfig resource:
