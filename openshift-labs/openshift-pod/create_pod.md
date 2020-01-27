@@ -8,10 +8,10 @@
 
   Run pod as interactive shell
 `oc run -i --tty busybox --image=busybox -- sh `{{execute}}
-`oc run nginx --image=nginx --restart=Never -n `{{execute}}
+`oc run nginx --image=nginx  -n `{{execute}}
  Run pod nginx in a specific namespace mynamespace
  Run pod nginx and write its spec into a file called pod.yaml
-`oc run nginx --image=nginx --restart=Never    --dry-run -o yaml > pod.yaml`{{execute}}
+`oc run nginx --image=nginx    --dry-run -o yaml > pod.yaml`{{execute}}
   Attach to Running Container
 `oc attach my-pod -i `{{execute}}
  Listen on port 5000 on the local machine and forward to port 6000 on my-pod
