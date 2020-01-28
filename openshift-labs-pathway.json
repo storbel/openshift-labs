@@ -37,6 +37,11 @@
       "course_id": "openshift-replicationController",
       "title": "Lab 09 - Day 01 - ReplicationController with OpenShift",
       "description": "Verify understand of ReplicationController"
+    },
+    {
+      "course_id": "openshift-deploymentConfig",
+      "title": "Lab 10 - DeploymentConfig with OpenShift",
+      "description": "Verify understand of DeploymentConfig"
     }
 
 

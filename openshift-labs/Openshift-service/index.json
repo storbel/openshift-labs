@@ -2,7 +2,7 @@
   "title": "Openshift Service usage",
   "description": "This Lab help understand different types of Services",
   "difficulty": "Advanced",
-  "time": "30",
+  "time": "60",
   "details": {
     "steps": [
       {
