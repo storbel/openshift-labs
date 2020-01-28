@@ -5,21 +5,24 @@ The master is blue, the branch is green.
 
 ## new project and blue app from master
 
-    oc new-project bluegreen --display-name="Blue Green" --description='Blue Green Deployments'
-    oc new-app https://github.com/devops-with-openshift/bluegreen#master --name=blue --strategy=sti
+`oc new-project bluegreen --display-name="Blue Green" --description='Blue Green Deployments'`{{execute}}
 
-## expose bluegreen service (using blue)
+Create a blue application :
 
-    oc expose service blue --name=bluegreen
+`oc new-app https://github.com/devops-with-openshift/bluegreen#master --name=blue `{{execute}}
 
-## green app deploy
+expose bluegreen service (using blue)
 
-    oc new-app https://github.com/devops-with-openshift/bluegreen#green --name=green
+`oc expose service blue --name=bluegreen`{{execute}}
 
-## switch services to green
+green app deploy
 
-    oc get route/bluegreen -o yaml | sed -e 's/name: blue$/name: green/' | oc replace -f -
+`oc new-app https://github.com/devops-with-openshift/bluegreen#green --name=green`{{execute}}
 
-## and back again
+ switch services to green
 
-    oc get route/bluegreen -o yaml | sed -e 's/name: green$/name: blue/' | oc replace -f -
+`oc get route/bluegreen -o yaml | sed -e 's/name: blue$/name: green/' | oc replace -f -`{{execute}}
+
+and back again
+
+`oc get route/bluegreen -o yaml | sed -e 's/name: green$/name: blue/' | oc replace -f -`{{execute}}
