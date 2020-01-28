@@ -17,8 +17,24 @@ You could instead create the project from the web console. If you do this, to ch
 
 `oc project acs`{{execute}}
 
+List PVC Associated to the project **acs** :
 
-oc get pvc
+
+`oc get pvc`{{execute}}
 
 
-$ oc new-app jenkins-persistent
+Create a new application that claim volumes :
+
+
+`oc new-app jenkins-persistent`{{execute}}
+
+
+Check the list of the PVC now :
+
+
+`oc get pvc`{{execute}}
+
+Check the list of the PV :
+
+`oc get pv`{{execute}}
+
