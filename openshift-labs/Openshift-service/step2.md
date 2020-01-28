@@ -5,6 +5,17 @@ Deploy a basic nginx service :
 
 `oc new-app openshift/hello-openshift`{{execute}}
 
+
+
+`oc get template -n openshift hello-openshift --as system:admin`{{execute}}
+
+
+`oc process  -n openshift hello-openshift`{{execute}}
+
+
+
+
+
 List Services :
 
 
