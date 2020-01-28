@@ -2,6 +2,7 @@
 
 
 `oc new-app mysql --name database \
+     -e DATABASE_SERVICE_NAME=database \
     -e MYSQL_USER=acs_user \
     -e MYSQL_PASSWORD=acs2020 \
     -e MYSQL_DATABASE=ocpdemo`{{execute}}

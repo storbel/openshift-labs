@@ -42,6 +42,11 @@
       "course_id": "openshift-deploymentConfig",
       "title": "Lab 10 - DeploymentConfig with OpenShift",
       "description": "Verify understand of DeploymentConfig"
+    },
+    {
+      "course_id": "openshift-application-deployment",
+      "title": "Lab Summary - Complete application deployment with OpenShift",
+      "description": "Verify understand of Openshift concepts"
     }
 
 
