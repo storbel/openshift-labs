@@ -2,7 +2,7 @@
   "title": "Openshift DeploymentConfig",
   "description": "This Lab help understand Openshift DeploymentConfig",
   "difficulty": "Intermediate",
-  "time": "20",
+  "time": "50",
   "details": {
     "steps": [
       {
