@@ -31,8 +31,11 @@ Create a new application that claim volumes :
 
 Check the list of the PVC now :
 
-
 `oc get pvc`{{execute}}
+
+Describe the pvc **jenkins** :
+
+`oc describe  pvc jenkins`{{execute}}
 
 Check the list of the PV :
 
