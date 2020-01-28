@@ -4,7 +4,7 @@
 oc new-project acs
 # Add developer as an administrator for this project
 
-oc policy add-cluster-role-to-user cluster-admin developer -n acs
+oc adm policy add-cluster-role-to-user cluster-admin developer -n acs
 
 mkdir /data;  chmod a+rwx  /data
 
