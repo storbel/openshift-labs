@@ -21,3 +21,21 @@ To create a new project called acs run the command:
 You could instead create the project from the web console. If you do this, to change to the project from the command line run the command:
 
 `oc project  voting-application`{{execute}}
+
+
+
+CLI for application :
+
+
+`oc new-project voting-application
+oc project  voting-application
+oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote
+oc expose svc/vote
+oc new-app redis-ephemeral --name redis -e REDIS_PASSWORD=redis_password
+oc new-app mysql --name db \
+    -e MYSQL_USER=postgres_user \
+    -e MYSQL_PASSWORD=postgres_password \
+    -e MYSQL_DATABASE=postgres`{{execute}}
+oc new-app https://github.com/storbel/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080
+oc expose svc/result
+`
