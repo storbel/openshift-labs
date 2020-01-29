@@ -47,6 +47,11 @@
       "course_id": "openshift-application-deployment",
       "title": "Lab Summary - Complete application deployment with OpenShift",
       "description": "Verify understand of Openshift concepts"
+    },
+    {
+      "course_id": "openshift-storage",
+      "title": "Lab 12 - Storage with OpenShift",
+      "description": "Verify understand of Storage concepts"
     }
 
 
