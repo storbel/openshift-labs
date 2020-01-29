@@ -25,17 +25,25 @@ You could instead create the project from the web console. If you do this, to ch
 
 
 CLI for application :
+======================
 
 
-`oc new-project voting-application
-oc project  voting-application
-oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote
-oc expose svc/vote
-oc new-app redis-ephemeral --name redis -e REDIS_PASSWORD=redis_password
-oc new-app mysql --name db \
+`oc new-project voting-application`
+
+`oc project  voting-application`
+
+`oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote`
+
+`oc expose svc/vote`
+
+`oc new-app redis-ephemeral --name redis -e REDIS_PASSWORD=redis_password`
+
+`oc new-app mysql --name db \
     -e MYSQL_USER=postgres_user \
     -e MYSQL_PASSWORD=postgres_password \
-    -e MYSQL_DATABASE=postgres`{{execute}}
-oc new-app https://github.com/storbel/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080
-oc expose svc/result
+    -e MYSQL_DATABASE=postgres`
+
+`oc new-app https://github.com/storbel/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080`
+
+`oc expose svc/result`
 `
