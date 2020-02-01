@@ -38,7 +38,7 @@ CLI for application :
 
 `oc new-app redis-ephemeral --name redis -e REDIS_PASSWORD=redis_password`{{execute}}
 
-`oc new-app postgresql-ephemeral --name db     -e DATABASE_SERVICE_NAME=db -e POSTGRESQL_USER=postgres_user     -e POSTGRESQL_PASSWORD=postgres_password     -e POSTGRESQL_DATABASE=postgres`{{execute}}
+`oc new-app postgresql-ephemeral --name=db     -e DATABASE_SERVICE_NAME=db -e POSTGRESQL_USER=postgres_user     -e POSTGRESQL_PASSWORD=postgres_password     -e POSTGRESQL_DATABASE=postgres`{{execute}}
 
 `oc get svc  postgresql -o yaml | sed 's/postgresql/mysql/g' | oc replace -f -`{{execute}}
 
