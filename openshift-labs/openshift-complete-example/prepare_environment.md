@@ -32,7 +32,7 @@ CLI for application :
 
 `oc project  voting-application`{{execute}}
 
-`oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote -e -e REDIS_PASSWORD=redis_password`{{execute}}
+`oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote -e REDIS_PASSWORD=redis_password`{{execute}}
 
 `oc expose svc/vote`{{execute}}
 
