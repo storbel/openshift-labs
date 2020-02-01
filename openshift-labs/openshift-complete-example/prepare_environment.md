@@ -28,22 +28,22 @@ CLI for application :
 ======================
 
 
-`oc new-project voting-application`
+`oc new-project voting-application`{{execute}}
 
-`oc project  voting-application`
+`oc project  voting-application`{{execute}}
 
-`oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote -e -e REDIS_PASSWORD=redis_password`
+`oc new-app https://github.com/storbel/example-voting-app.git --name=vote --context-dir=vote -e -e REDIS_PASSWORD=redis_password`{{execute}}
 
-`oc expose svc/vote`
+`oc expose svc/vote`{{execute}}
 
-`oc new-app redis-ephemeral --name redis -e REDIS_PASSWORD=redis_password`
+`oc new-app redis-ephemeral --name redis -e REDIS_PASSWORD=redis_password`{{execute}}
 
-`oc new-app postgresql-ephemeral --name db     -e DATABASE_SERVICE_NAME=db -e POSTGRESQL_USER=postgres_user     -e POSTGRESQL_PASSWORD=postgres_password     -e POSTGRESQL_DATABASE=postgres`
+`oc new-app postgresql-ephemeral --name db     -e DATABASE_SERVICE_NAME=db -e POSTGRESQL_USER=postgres_user     -e POSTGRESQL_PASSWORD=postgres_password     -e POSTGRESQL_DATABASE=postgres`{{execute}}
 
-`oc get svc  postgresql -o yaml | sed 's/postgresql/mysql/g' | oc replace -f -`
+`oc get svc  postgresql -o yaml | sed 's/postgresql/mysql/g' | oc replace -f -`{{execute}}
 
+`oc new-app https://github.com/storbel/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080`{{execute}}
 
-`oc new-app https://github.com/storbel/example-voting-app.git --context-dir=result --name=result   --strategy=docker -e PORT=8080`
+`oc expose svc/result`{{execute}}
 
-`oc expose svc/result`
-`oc new-app https://github.com/storbel/example-voting-app.git --context-dir=worker --name=worker   --strategy=docker `
+`oc new-app https://github.com/storbel/example-voting-app.git --context-dir=worker --name=worker   --strategy=docker `{{execute}}
