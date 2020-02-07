@@ -1,0 +1,24 @@
+{
+  "title": "Storbel labs",
+  "description": "Labs used by Storbel for training purposes",
+  "icon": "fa-openshift",
+  "courses": [
+    {
+      "course_id": "bash_storbel",
+      "title": "Enjoy Bahsing with Bash",
+      "description": "Docker essentials for OpenShift understanding"
+    },
+        {
+      "course_id": "terraform_aws",
+      "title": "Terraform with Amazon AWS",
+      "description": "Essentials AWS managing of AWS with Terraform"
+    },
+    {
+      "course_id": "terraform_docker",
+      "title": "Docker with Terraform",
+      "description": "Manage Docker images/containers with Terraform"
+    }
+
+
+  ]
+}
