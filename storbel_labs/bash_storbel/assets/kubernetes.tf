@@ -1,6 +1,13 @@
-provider "kubernetes" {
-  host = "https://localhost:8443"
+resource "kubernetes_namespace" "example" {
+  metadata {
+    annotations = {
+      name = "example-annotation"
+    }
 
-  username = "developer"
-  password = "developer"
+    labels = {
+      mylabel = "label-value"
+    }
+
+    name = "terraform-example-namespace"
+  }
 }
