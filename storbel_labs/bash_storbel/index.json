@@ -21,7 +21,8 @@
     "assets": {
       "host01": [
           {"file": "volumes.json", "target": "/root", "chmod": "+x"},
-          {"file": "kubernetes.tf", "target": "/root", "chmod": "+x"}
+          {"file": "kubernetes.tf", "target": "/root", "chmod": "+x"},
+          {"file": "vars.tfvars", "target": "/root", "chmod": "+x"}
       ]
     },
     "intro": {
