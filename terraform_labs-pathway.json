@@ -17,6 +17,11 @@
       "course_id": "terraform_docker",
       "title": "Docker with Terraform",
       "description": "Manage Docker images/containers with Terraform"
+    },
+    {
+      "course_id": "terraform_kubernetes",
+      "title": "Kubernetes with Terraform",
+      "description": "Manage Kubernetes with Terraform"
     }
 
 
