@@ -42,5 +42,5 @@ resource "kubernetes_secret" "example" {
     password = "P4ssw0rd"
   }
 
-  type = "kubernetes.io/basic-auth"
+  type = "kubernetes.io/"${each.value}
 }
