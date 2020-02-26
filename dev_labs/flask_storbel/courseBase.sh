@@ -6,6 +6,10 @@ python3 get-pip.py
 pip install flask
 git clone https://github.com/storbel/flask.git
 
+git clone https://github.com/miguelgrinberg/flasky.git
+cd flasky
+git checkout 1a
+
  wget https://releases.hashicorp.com/terraform/0.12.20/terraform_0.12.20_linux_amd64.zip
  yum install unzip
  unzip terraform_0.12.20_linux_amd64.zip
