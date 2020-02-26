@@ -20,7 +20,7 @@
     ],
     "assets": {
       "host01": [
-          {"file": "instrospector.py", "target": "/root/app", "chmod": "+x"}
+          {"file": "instrospector.py", "target": "/root", "chmod": "+x"}
       ]
     },
     "intro": {
