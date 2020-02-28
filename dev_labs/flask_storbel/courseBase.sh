@@ -22,6 +22,7 @@ git clone https://github.com/storbel/flask.git
 # Clone Flasky
 git clone https://github.com/miguelgrinberg/flasky.git
 cd flasky
-git checkout 1a
+git checkout 4a
 
 
+	
