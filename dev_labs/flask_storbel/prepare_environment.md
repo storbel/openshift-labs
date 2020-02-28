@@ -5,7 +5,7 @@ When the OpenShift playground is created you will be logged in initially as a cl
 `terraform version`{{execute}}
 
 
-`terraform version`{{execute}}
+`python -V`{{execute}}
 
 
-`terraform version`{{execute}}
+`pip --version`{{execute}}
