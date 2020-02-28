@@ -19,7 +19,7 @@
       }
     ],
     "assets": {
-      "host01": [
+      "master": [
           {"file": "requirements.txt", "target": "/home/scrapbook/tutorial"}
       ]
     },
