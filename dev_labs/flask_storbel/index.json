@@ -1,6 +1,6 @@
 {
-  "title": "Openshift Storage ",
-  "description": "This lab help manipulate storageClass, persistent volume and Persistent  volume claims",
+  "title": "Flask Environment ",
+  "description": "This lab help follow the Example on the Book Flask Development ",
   "difficulty": "Advanced",
   "time": "120",
   "details": {
