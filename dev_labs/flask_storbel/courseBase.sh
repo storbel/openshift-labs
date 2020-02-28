@@ -13,15 +13,12 @@ apt-get -y install unzip
 wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py
 # Install Flask
-pip install flask
-pip install flask-bootstrap
-pip install flask-script
+#for module in flask flask-bootstrap flask-script flask_moment flask_wtf; do pip install $module; done
 # Clone Storbel Flask 
 git clone https://github.com/storbel/flask.git
 
 # Clone Flasky
 git clone https://github.com/miguelgrinberg/flasky.git
-cd flasky
 
 
 

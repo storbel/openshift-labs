@@ -12,6 +12,7 @@ When the OpenShift playground is created you will be logged in initially as a cl
 
 `ansible --version`{{execute}}
 
+`pip install -r requirments.txt`{{execute}}
 
 `export LC_ALL=C.UTF-8
 export LANG=C.UTF-8`{{execute}}
