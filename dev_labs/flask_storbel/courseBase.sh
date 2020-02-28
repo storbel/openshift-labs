@@ -14,7 +14,8 @@ wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py
 # Install Flask
 pip install flask
-
+pip install flask-bootstrap
+pip install flask-script
 # Clone Storbel Flask 
 git clone https://github.com/storbel/flask.git
 
