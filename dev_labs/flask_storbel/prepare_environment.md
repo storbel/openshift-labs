@@ -11,3 +11,8 @@ When the OpenShift playground is created you will be logged in initially as a cl
 `pip --version`{{execute}}
 
 `ansible --version`{{execute}}
+
+
+`cd flasky
+export FLASK_APP=hello.py
+python -m flask run`{{execute}}
