@@ -19,7 +19,7 @@
       }
     ],
     "assets": {
-      "ab5de265721c": [
+      "host01": [
           {"file": "requirements.txt", "target": "/home/scrapbook/tutorial"}
       ]
     },
