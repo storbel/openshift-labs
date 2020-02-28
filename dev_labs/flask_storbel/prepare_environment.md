@@ -13,6 +13,10 @@ When the OpenShift playground is created you will be logged in initially as a cl
 `ansible --version`{{execute}}
 
 
+`export LC_ALL=C.UTF-8
+export LANG=C.UTF-8`{{execute}}
+    
+    
 `cd flasky
 export FLASK_APP=hello.py
-python -m flask run`{{execute}}
+python3 -m flask run`{{execute}}
