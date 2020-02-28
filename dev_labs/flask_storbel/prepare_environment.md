@@ -9,3 +9,5 @@ When the OpenShift playground is created you will be logged in initially as a cl
 
 
 `pip --version`{{execute}}
+
+`ansible --version`{{execute}}
