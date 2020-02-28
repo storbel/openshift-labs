@@ -20,7 +20,7 @@
     ],
     "assets": {
       "host01": [
-          {"file": "requirements.txt", "target": "/root", "chmod": "+x"}
+          {"file": "requirements.txt", "target": "/home/scrapbook/tutorial", "chmod": "+x"}
       ]
     },
     "intro": {
