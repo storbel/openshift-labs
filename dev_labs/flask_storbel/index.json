@@ -20,7 +20,7 @@
     ],
     "assets": {
       "master": [
-          {"file": "requirements.txt", "target": "/home/scrapbook/tutorial"}
+          {"file": "requirements.txt", "target": "/root"}
       ]
     },
     "intro": {
