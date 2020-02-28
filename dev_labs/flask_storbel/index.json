@@ -19,8 +19,8 @@
       }
     ],
     "assets": {
-      "host01": [
-          {"file": "requirements.txt", "target": "/home/scrapbook/tutorial", "chmod": "+x"}
+      "ab5de265721c": [
+          {"file": "requirements.txt", "target": "/home/scrapbook/tutorial"}
       ]
     },
     "intro": {

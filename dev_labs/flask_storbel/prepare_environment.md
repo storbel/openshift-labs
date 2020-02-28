@@ -11,14 +11,14 @@ When the OpenShift playground is created you will be logged in initially as a cl
 `pip --version`{{execute}}
 
 `ansible --version`{{execute}}
-
+`cd flasky`{{execute}}
 `pip install -r requirements.txt`{{execute}}
 
 `export LC_ALL=C.UTF-8
 export LANG=C.UTF-8`{{execute}}
     
     
-`cd flasky`{{execute}}
+
 
 `git checkout 4b`{{execute}}
 
