@@ -20,4 +20,4 @@ export LANG=C.UTF-8`{{execute}}
 `cd flasky
 git checkout 2b
 export FLASK_APP=hello.py
-python3 -m flask run`{{execute}}
+python3 -m flask run  --host=0.0.0.0`{{execute}}
