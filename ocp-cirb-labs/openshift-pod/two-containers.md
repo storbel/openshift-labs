@@ -1,13 +1,14 @@
 
 
-Apply a Pod that has two containers : 
+Apply a Pod that has two containers :
 
 `oc apply -f two-containers.yml`{{execute}}
 
 
-`oc get pod -o wide`
+`oc get pod -o wide -w`{{execute}}
 
 
+`oc get pod -l app=myapplication`{{execute}}
 
 
 `oc describe pod two-containers `{{execute}}
@@ -24,3 +25,5 @@ Apply a Pod that has two containers :
 
 `oc exec two-containers -c nginx-container  cat /usr/share/nginx/html/index.html`{{execute}}
 
+ Show metrics for a given pod and its containers
+`oc top pod two-containers --containers   `{{execute}}
