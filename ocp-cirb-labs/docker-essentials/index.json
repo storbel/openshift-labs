@@ -1,0 +1,56 @@
+{
+  "title": "Build docker image",
+  "description": "This lab help build a docker image from a git repository",
+  "difficulty": "Intermediate",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Check Docker environment",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Play with Docker ",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Download code from Git",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 -  Create Dockerfile",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 -  Build and Run Docker image",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 -  Persistent volume",
+        "text": "step6.md"
+      },
+      {
+        "title": "Step 7 -  Push image to DockerHub",
+        "text": "step7.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+          {"file": "Dockerfile", "target": "/root"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
