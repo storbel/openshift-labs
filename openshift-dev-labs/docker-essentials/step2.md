@@ -80,6 +80,9 @@ Check image volatile data :
 apt-get install vim
 touch /opt/testfile`{{execute}}
 
+Get out of the container shell :
+`exit`{{execute}}
+Stop the container :
 `docker stop dev`{{execute}}
 
 `docker stop dev`{{execute}}

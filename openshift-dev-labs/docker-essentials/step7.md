@@ -1,3 +1,8 @@
+
+
+
+`docker container run -idt --name dev --net host ubuntu bash`{{execute}}
+
 connect to that container using following command
 
 `docker exec -it dev bash`{{execute}}

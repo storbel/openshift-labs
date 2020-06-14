@@ -1,12 +1,12 @@
 {
-  "title": "Openshift Administration labs",
-  "description": "Openshift Administration labs for the openshift training",
+  "title": "Openshift Application development labs",
+  "description": "Openshift Application development training labs",
   "icon": "fa-openshift",
   "courses": [
     {
-      "course_id": "docker-sample",
-      "title": "Lab 01 - Day 01 - Docker Essentials before OpenShift",
-      "description": "Docker essentials for OpenShift understanding"
+      "course_id": "docker-essentials",
+      "title": "Lab 01 - Day 01 - Docker Essentials",
+      "description": "Docker essentials understanding required better OpenShift journey "
     },
     {
       "course_id": "openshift-pod",

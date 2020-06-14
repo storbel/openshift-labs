@@ -3,8 +3,12 @@ In this Section we are goiing for portainer web console which will allow you web
 
 `docker volume create portainer_data`{{execute}}
 [output]
-
 portainer_data
+
+Locate the Volume on the FileSystem :
+
+`find / -name portainer_data`{{execute}}
+
 After creating volume excute following command
 
 `docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`{{execute}}
