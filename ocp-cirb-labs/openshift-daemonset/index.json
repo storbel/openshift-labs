@@ -20,7 +20,15 @@
     ],
     "assets": {
       "host01": [
-          {"file": "daemonset.yml", "target": "/root"}
+
+          {
+            "file": "daemonset.yml",
+            "target": "/root"
+          },
+          {
+            "file": "daemonset-selector.yml",
+            "target": "/root"
+          }
       ]
     },
     "intro": {

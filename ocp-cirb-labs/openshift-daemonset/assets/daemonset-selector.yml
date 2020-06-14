@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: DaemonSet
 metadata:
-  name: hello-daemonset
+  name: hello-daemonset-infra
 spec:
   selector:
       matchLabels:
@@ -9,8 +9,10 @@ spec:
   template:
     metadata:
       labels:
-        name: hello-daemonset
+        name: hello-daemonset-infra
     spec:
+      nodeSelector:
+        type: infra
       containers:
       - image: openshift/hello-openshift
         imagePullPolicy: Always
