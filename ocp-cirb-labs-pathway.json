@@ -1,6 +1,6 @@
 {
-  "title": "Openshift Application development labs",
-  "description": "Openshift Application development training labs",
+  "title": "Openshift/Kubernetes introduction labs",
+  "description": "Openshift and kubernetes Application development training labs",
   "icon": "fa-openshift",
   "courses": [
     {
