@@ -7,12 +7,6 @@ Deploy a basic nginx service :
 
 
 
-`oc get template -n openshift hello-openshift --as system:admin`{{execute}}
-
-
-`oc process  -n openshift hello-openshift`{{execute}}
-
-
 
 
 

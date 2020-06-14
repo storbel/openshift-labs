@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
       matchLabels:
-        name: hello-daemonset
+        name: hello-daemonset-infra
   template:
     metadata:
       labels:

@@ -1,9 +1,43 @@
+Advanced topics
+
+Get the pod name :
+
+` POD=$(oc get pod|grep hello-openshift | grep Running | awk '{print $1}')`{{execute}}
+
+Display the Pod name :
+
+` echo $POD`{{execute}}
 
 
-get the service ip :
+Get to the pod shell :
 
-`oc get svc -o wide`{{execute}}
+` oc rsh $POD`{{execute}}
 
-Check the cluster service CIDR configuration :
+get configuration volume :
 
-`cat /etc/origin/master/master-config.yaml`{{execute}}
+`configVol=$(mount | grep resolv|awk '{print $2}')`{{execute}}
+
+locate the configuration volume pushed by Kubernetes :
+
+`mount | grep $configVol`{{execute}}
+
+Read the resolv.conf file :
+
+` cat /etc/resolv.conf`{{execute}}
+
+Get the nameserver configured :
+
+`nameserver=$(cat /etc/resolv.conf|grep nameserver|awk '{print $2}')`{{execute}}
+
+
+` echo $nameserver`{{execute}}
+
+
+Check to which  Pod this ip is associated :
+
+`oc get pods --all-namespaces --as system:admin -o wide|grep $nameserver`{{execute}}
+
+
+
+
+
