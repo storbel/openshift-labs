@@ -5,7 +5,7 @@ Before creating any applications, it is recommended you login as a distinct user
 
 To login to the OpenShift cluster from the Terminal run:
 
-`oc login -u developer -p developer  [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+`oc login -u developer -p developer  `{{execute}}
 
 This will log you in using the credentials:
 Username: developer
