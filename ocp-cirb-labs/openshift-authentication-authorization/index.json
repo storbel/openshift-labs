@@ -34,6 +34,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "openshift-3-11"
+    "imageid": "openshift-4-2"
   }
 }
