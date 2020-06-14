@@ -1,0 +1,39 @@
+{
+  "title": "Dedicated lab for Openshift Authorization and Authenticationb",
+  "description": "Dedicated lab for Openshift Authorization and Authentication",
+  "difficulty": "Advanced",
+  "time": "30",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Users contexts",
+        "text": "user_management.md"
+      },
+      {
+        "title": "Step 3 - Users and roles management",
+        "text": "user_and_role_mgmt.md"
+      },
+      {
+        "title": "Step 2 -  Login with token & API",
+        "text": "use_token.md"
+      }
+
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [
+        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
+
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "openshift-3-11"
+  }
+}

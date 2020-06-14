@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  prefsConfig: |-
+    [database]
+    hostname = database
+    username = acs_user
+    password = acs2020
+    dbname = ocpdemo
+
+    [environment]
+    environment = DEV
+
+    [prefs]
+    color  = white
+    fruit  = apple
+    car    = fiat
+    laptop = dell
+kind: ConfigMap
+metadata:
+  name: prefs
+  namespace: acs

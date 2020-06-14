@@ -1,0 +1,43 @@
+{
+  "title": "Use of ReplicaSet with Openshift",
+  "description": "This Lab is aimed to explain the usage of ReplicaSet",
+  "difficulty": "Intermediate",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "replication_controller.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+          {"file": "replication_controller.yml", "target": "/root"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "showdashboard": true,
+    "dashboards": [
+        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
+
+    "imageid": "openshift-3-11"
+  }
+}
