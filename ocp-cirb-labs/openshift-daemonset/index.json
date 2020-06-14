@@ -31,13 +31,16 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
-  },
-  "backend": {
     "showdashboard": true,
     "dashboards": [
-        {"name": "Dashboard", "href": "https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console"}],
-
-    "imageid": "openshift-middleware-3-7"
+      {
+        "name": "Dashboard",
+        "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/k8s/cluster/projects"
+      }
+    ],
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "openshift-4-2"
   }
 }
