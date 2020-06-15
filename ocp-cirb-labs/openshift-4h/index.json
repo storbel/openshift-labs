@@ -1,0 +1,36 @@
+{
+  "title": "Openshift 5h lab",
+  "description": "5H Openshift lab",
+  "difficulty": "Advanced",
+  "time": "300",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+          {"file": "nodeport.yml", "target": "/root"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "showide": true,
+    "dashboards": [
+        {"name": "Dashboard", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/k8s/cluster/projects"}],
+
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "openshift-4-2"
+  }
+}
