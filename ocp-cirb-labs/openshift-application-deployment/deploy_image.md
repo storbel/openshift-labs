@@ -17,12 +17,18 @@ in case of **error**, connect to the Openshift console, and use the Pod terminal
 
 
 `mysql -u acs_user ocpdemo -p`{{execute}}
+
 `show databases;`{{execute}}
+
 `use ocpdemo;`{{execute}}
+
 Manually:
 `mysql -u acs_user ocpdemo -p`{{copy}}
+
 `show databases;`{{copy}}
+
 `use ocpdemo;`{{copy}}
+
 
 Create Table and insert record :
 `CREATE TABLE dbversion (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,version VARCHAR(30) NOT NULL);
@@ -69,9 +75,7 @@ http://advanced-app-acs.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.kat
 
 
 
-Transfer file to  running Pod :
 
-`oc rsync $(oc get pods -l app=database --template='{{range .items}}{{.metadata.name}}{{end}}'):/tmp demodb.sql`{{execute}}
 
 
 Patch Deployment :
@@ -85,35 +89,6 @@ Import image to local container registry :
 
 
 `oc import-image openshiftkatacoda/blog-django-py --confirm`{{execute}}
-
-
-
- Push Image to the Registry :
-
- oc create imagestream.
-
-
-$ docker tag blog-django-py \
- registry.pro-us-east-1.openshift.com:443/book/blog-django-py:latest
-
-
-
- $ docker login -u `oc whoami` -p `oc whoami --show-token` \
- registry.pro-us-east-1.openshift.com:443
-Login Succeeded
-
-$ docker push registry.pro-us-east-1.openshift.com:443/book/blog-django-py
-
-
-
-
-To allow any applications deployed within a project the ability to run as the user the
-container image specifies, including root, a cluster admin can run against a project
-the command:
-$ oadm policy add-scc-to-user anyuid -z default
-A cluster admin would only want to allow this after the risks associated with running
-the image as root have been assessed. It is never good practice to run as root arbitrary
-images taken from public image registries.
 
 
 
