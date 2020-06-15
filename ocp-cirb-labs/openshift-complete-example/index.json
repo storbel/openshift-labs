@@ -29,6 +29,10 @@
       {
         "title": "Step 6 - Deploy Worker application",
         "text": "deploy_worker.md"
+      },
+      {
+        "title": "Step 7 - Check application",
+        "text": "access_application.md"
       }
     ],
      "assets": {
@@ -52,7 +56,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [
-        {"name": "Dashboard", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/k8s/cluster/projects"}],
+        {"name": "Dashboard", "href": "https://console-openshift-console-[[HOST_SUBDOMAIN]]-6443-[[KATACODA_HOST]].environments.katacoda.com"}],
 
     "uilayout": "terminal-iframe"
   },
