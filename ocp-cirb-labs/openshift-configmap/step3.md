@@ -12,12 +12,19 @@ the names and values for the settings:
  --from-literal username=acs_user \
  --from-literal password=acs2020 \
   --from-literal dbname=ocpdemo `{{execute}}
-  
-  
+
+
 `oc get configmap prefs -o json `{{execute}}
 
 
+Update the application with the new config map:
 `oc set env dc/nginx-example --from configmap/prefs`{{execute}}
+
+
+
+Check the pod now :
+
+`oc get pod `{{execute}}
 
 
 
@@ -38,7 +45,7 @@ To create the config map, instead of using --from-literal, use --from-file:
 
 Running oc describe on the config map created, the result is:
 
-`oc describe configmap/perfs-file`{{execute}}
+`oc describe configmap/prefs-file`{{execute}}
 
 
 The name of the file is used as the key. If it were necessary for the key to be different
@@ -48,7 +55,7 @@ To mount a config map into a container as a set of files, run:
 
 `oc set volume dc/nginx-example --add --configmap-name prefs-file  --mount-path=/opt/app-root/src/settings`{{execute}}
 
- 
+
  This will result in files being created in the directory specified by the --mount-path
 option, where the names of the files created correspond to the keys, and the contents
 of the files are the values associated with those keys.
@@ -57,4 +64,6 @@ of the files are the values associated with those keys.
 existing files, those files will be hidden from view and no longer
 accessible.`
 
- 
+Check the content of the file :
+
+`oc exec POD=$(oc get pod|grep nginx-example | grep Running | awk '{print $1}') cat /opt/app-root/src/settings/prefs.json`{{execute}}

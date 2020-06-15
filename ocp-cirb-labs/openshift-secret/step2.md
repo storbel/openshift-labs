@@ -25,8 +25,11 @@ List the secrets :
 
 `oc get secret`{{execute}}
 
-Check the content of the **database-secrets.yml** file :
 
+Check the content of the **database-secrets.yml** file :
+`cat  database-secrets.yml`{{execute}}
+
+Create the secret :
 `oc create -f database-secrets.yml`{{execute}}
 
 Check the new secret created :
@@ -39,6 +42,12 @@ Display the secret :
 
 
 Create  a Pod that mount the secret as a volume :
+
+
+check the content of the secret-vol-pod.yml
+
+
+`cat secret-vol-pod.yml`{{execute}}
 
 
 `oc create -f secret-vol-pod.yml`{{execute}}
@@ -62,7 +71,7 @@ Enter the container shell :
 
 in case of error, try to access directly the pod terminal via the link blow :
 
-https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console/project/acs/browse/pods/secret-vol-pod?tab=terminal
+https://console-openshift-console-[[HOST_SUBDOMAIN]]-443-[[KATACODA_HOST]].environments.katacoda.com/console/project/acs/browse/pods/secret-vol-pod?tab=terminal
 
 List the secrets :
 

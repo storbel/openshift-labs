@@ -50,7 +50,7 @@ List the replication controllers :
 Edit the replication controller and increment the replication controller to 5 :
 
 
-`oc edit rc fontend-1`{{execute}}
+`oc edit rc frontend-1`{{execute}}
 
 
 List the pods :

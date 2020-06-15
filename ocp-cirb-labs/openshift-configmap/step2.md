@@ -5,7 +5,6 @@ Deploy a sample application :
 
 `oc new-app nginx-example`{{execute}}
 
-`oc expose svc/nginx`{{execute}}
 
 
 List ConfigMap present on the project **acs**
@@ -27,7 +26,7 @@ Display the newly created ConfigMap :
 
 `oc get cm prefs -o yaml`{{execute}}
 
-Delete configMap Prefs : 
+Delete configMap Prefs :
 
 `oc delete cm prefs `{{execute}}
 
