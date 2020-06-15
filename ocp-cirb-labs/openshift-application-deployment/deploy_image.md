@@ -16,14 +16,29 @@
 in case of **error**, connect to the Openshift console, and use the Pod terminal  :
 
 
-`mysql -u acs_user -p ocpdemo`{{execute}}
+`mysql -u acs_user ocpdemo -p`{{execute}}
+`show databases;`{{execute}}
+`use ocpdemo;`{{execute}}
+Manually:
+`mysql -u acs_user ocpdemo -p`{{copy}}
+`show databases;`{{copy}}
+`use ocpdemo;`{{copy}}
 
+Create Table and insert record :
 `CREATE TABLE dbversion (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,version VARCHAR(30) NOT NULL);
 INSERT INTO dbversion (version) VALUES ('1.0');
 `{{execute}}
 
+Manually:
+`CREATE TABLE dbversion (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,version VARCHAR(30) NOT NULL);
+INSERT INTO dbversion (version) VALUES ('1.0');`{{copy}}
+
+
+
 
 `
+
+
 
 sh-4.2$ mysql -u acs_user -p ocpdemo
 Enter password:

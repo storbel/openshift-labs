@@ -7,7 +7,7 @@
       "course_id": "openshift-4h",
       "title": "Openshift 4.2  5-Hours ",
       "description": "Openshift 4.2 CRC lab"
-    }, 
+    },
    {
       "course_id": "docker-essentials",
       "title": "Docker Essentials",
@@ -44,6 +44,11 @@
       "description": "Verify understand of ReplicationController"
     },
     {
+      "course_id": "openshift-deployment",
+      "title": "Deployment with OpenShift",
+      "description": "Verify understand of Deployment"
+    },
+    {
       "course_id": "openshift-deploymentConfig",
       "title": "DeploymentConfig with OpenShift",
       "description": "Verify understand of DeploymentConfig"
@@ -52,28 +57,29 @@
       "course_id": "openshift-application-deployment",
       "title": "Lab Summary - Complete application deployment with OpenShift",
       "description": "Verify understand of Openshift concepts"
-    },
-    {
-      "course_id": "openshift-storage",
-      "title": "Storage with OpenShift",
-      "description": "Verify understand of Storage concepts"
-    },
-    {
-      "course_id": "openshift-authentication-authorization",
-      "title": "Authentication and Authorization with OpenShift",
-      "description": "Verify understand of Authentication and Authorization concepts"
-    },
-    {
-      "course_id": "openshift-quota",
-      "title": "Quota with OpenShift",
-      "description": "Verify understand of Quota concepts"
-    },
-    {
-      "course_id": "openshift-complete-example",
-      "title": "Complete application deployment with OpenShift",
-      "description": "Verify understand of Openshift concepts"
     }
-
+#    ,
+#    {
+#      "course_id": "openshift-storage",
+#      "title": "Storage with OpenShift",
+#      "description": "Verify understand of Storage concepts"
+#    },
+#    {
+#      "course_id": "openshift-authentication-authorization",
+#      "title": "Authentication and Authorization with OpenShift",
+#      "description": "Verify understand of Authentication and Authorization concepts"
+#    },
+#    {
+#      "course_id": "openshift-quota",
+#      "title": "Quota with OpenShift",
+#      "description": "Verify understand of Quota concepts"
+#    } ,
+#    {
+#      "course_id": "openshift-complete-example",
+#      "title": "Complete application deployment with OpenShift",
+#      "description": "Verify understand of Openshift concepts"
+#    }
+#
 
   ]
 }
