@@ -29,14 +29,6 @@
       {
         "title": "Step 6 - Deploy Worker application",
         "text": "deploy_worker.md"
-      },
-      {
-        "title": "Step 7 - Create applications yaml",
-        "text": "create_application_yaml.md"
-      },
-      {
-        "title": "Step 8 - Create application template",
-        "text": "create_application_template.md"
       }
     ],
      "assets": {
