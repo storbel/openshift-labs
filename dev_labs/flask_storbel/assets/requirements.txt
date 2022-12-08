@@ -30,7 +30,7 @@ Werkzeug==0.12.2
 WTForms==2.1
 gunicorn==19.7.1
 pymysql==0.7.11
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 coverage==4.4.1
 faker==0.7.18
